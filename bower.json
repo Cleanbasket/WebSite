@@ -1,0 +1,20 @@
+{
+  "name": "cleanbasket",
+  "description": "clean basket desktop page",
+  "main": "index.js",
+  "authors": [
+    "zeakd"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/zeakd/cleanbasket",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}

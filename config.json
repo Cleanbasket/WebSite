@@ -1,0 +1,11 @@
+{
+	"src": {
+		"main": {
+			"html": "main/main.html",
+			"sass": "main/sass/main.scss",
+			"js": "main/js/main.js",
+			"dest": ""
+		}
+	},
+	"dest": "build/"
+}
