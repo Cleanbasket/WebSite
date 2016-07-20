@@ -29,8 +29,8 @@ gulp.task('del', function (done) {
 
 gulp.task('build-all', function () {
 	var streams = [];
-	for (page in config.src) {
-		streams.push(buildAssets(config.src[page]));
+	for (page in config.build.src) {
+		streams.push(buildAssets(config.build.src[page]));
 	}
 	return mergeStream(streams);
 })
@@ -41,13 +41,17 @@ gulp.task('build', function (done) {
 
 function buildSass(target) {
 	return gulp.src(path.join('src', target.sass))
-		.pipe(sass().on('error', sass.logError))
-		.pipe(gulp.dest(path.join(config.dest, target.dest, 'css')))
+		.pipe(sass({
+			includePaths: [
+				"bower_components/normalize-scss/sass"
+			]
+		}).on('error', sass.logError))
+		.pipe(gulp.dest(path.join(config.build.dest, target.dest, 'css')))
 }
 
 function buildHtml(target) {
 	return gulp.src(path.join('src', target.html))
-		.pipe(gulp.dest(path.join(config.dest, target.dest)))
+		.pipe(gulp.dest(path.join(config.build.dest, target.dest)))
 }
 
 function buildAssets(target) {
@@ -55,10 +59,6 @@ function buildAssets(target) {
 }
 
 function getSrc(filepath) {
-	// console.log(filepath);
-	// console.log(__dirname);
-	// var relPath = path.relative(__dirname, filepath);
-	// console.log(path.relative('src', relPath));
 	var relPath = path.relative(path.join(__dirname, 'src'), filepath);
 	var dirArr = relPath.split(path.sep);
 	return dirArr[0];
@@ -80,14 +80,14 @@ gulp.task('browser-sync', function () {
 gulp.task('watch', function () {
     gulp.watch("src/**/*.scss", function (e) {
     	var name = getSrc(e.path);
-    	buildSass(config.src[name]);
+    	buildSass(config.build.src[name]);
     });
     gulp.watch("src/**/*.html", function (e) {
     	var name = getSrc(e.path);
-    	buildHtml(config.src[name]);
+    	buildHtml(config.build.src[name]);
     });
     gulp.watch([
-    	`${config.dest}/**/*.html`,
-    	`${config.dest}/**/*.css`
+    	`${config.build.dest}/**/*.html`,
+    	`${config.build.dest}/**/*.css`
     ]).on('change', browserSync.reload);
 });

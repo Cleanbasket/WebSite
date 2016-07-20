@@ -1,11 +1,17 @@
 {
-	"src": {
-		"main": {
-			"html": "main/main.html",
-			"sass": "main/sass/main.scss",
-			"js": "main/js/main.js",
-			"dest": ""
-		}
+	"build": {
+		"src": {
+			"main": {
+				"html": "main/main.html",
+				"sass": "main/sass/main.scss",
+				"js": "main/js/main.js",
+				"dest": ""
+			}
+		},
+		"dest": "build/"	
 	},
-	"dest": "build/"
+
+	"browserSync": {
+		"port": 3000
+	}
 }

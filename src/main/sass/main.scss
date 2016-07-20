@@ -1,9 +1,49 @@
-@import 
-	'normalize-css/normalize.css';
+@import "normalize/import-now";
+/** 
+ * Clean Basket
+ * Kim Deok Seong
+ */
+
+@import "./variables";
+
+/** 
+ * Layout 
+ */
+#header {
+	background-color: teal;
+	height : $header-height;
+}
+
+#nav {
+	float: right;
+	> a {
+		
+	}
+}
 
 #hero {
 	background-color: red;
 	li {
 		display: none;
 	}
+}
+
+#area {
+	background-color: tomato;
+	height: $area-height;
+}
+
+#process {
+	background-color: forestgreen;
+	height: $process-height;
+}
+
+#detail {
+	background-color: palevioletred;
+	height: $detail-height;
+}
+
+#footer {
+	background-color: steelblue;
+	height: $footer-height;
 }
