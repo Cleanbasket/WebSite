@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var path = require('path');
 
 var mergeStream = require('merge-stream');
 var buildSass = require('./buildSass');
@@ -7,7 +8,7 @@ var buildPage = require('./buildPage');
 var config = require('../../config.json');
 
 function getSrc(filepath) {
-  var relPath = path.relative(path.join(__dirname, 'src'), filepath);
+  var relPath = path.relative(path.join(__dirname, '../../src'), filepath);
   var dirArr = relPath.split(path.sep);
   return dirArr[0];
 }
@@ -27,6 +28,7 @@ module.exports.watch = function () {
   });
   gulp.watch("src/**/*.html", function (e) {
     var name = getSrc(e.path);
+    console.log(name);
     buildHtml(config.build.src[name]);
   });
 }
