@@ -7,16 +7,18 @@
 <body>
 	<div id="root">
 		<!-- header -->
-		<header id="header">
-			<a href="#">
+		<header id="header" class='header'>
+			<a class='header-logo' href="#">
 				<img src='http://placehold.it/280x54'>
 			</a>
-			<nav id="nav">
-				<a href="">크바연구소</a>
-				<a href="">문의하기</a>
-				<a href="">소개</a>
-				<a href="">크린파트너모집</a>
+			<nav id="nav" class='nav'>
+				<a class='nav-link' href="">크바연구소</a>
+				<a class='nav-link' href="">문의하기</a>
+				<a class='nav-link' href="">소개</a>
+				<a class='nav-link' href="">크린파트너모집</a>
+				<a href=""><button class='btn btn-border'>주문하기</button></a>
 			</nav>
+
 		</header>
 
 		<div id="hero">
@@ -24,7 +26,22 @@
 			hero
 		</div>
 		
-		<div id="area"></div>
+		<div id="area">
+			<header class="header-inverted">
+				<h2>서비스 지역</h2>
+				<div class='divider divider-vertical'></div>
+				<p>서비스가 가능한 지역을 확인해 보세요</p>
+				<div class="input">
+					<span class='icon icon-gps'></span>
+					<input />
+				</div>
+				<button class="btn btn-primary">확인</button>
+				<button class="btn btn-secondary">
+					<span class='icon'></span>
+					서비스지역 전체보기
+				</button>
+			</header>
+		</div>
 		<div id="process"></div>
 		<div id="detail"></div>
 		<div id="appinfo"></div>

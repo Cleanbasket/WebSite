@@ -1,16 +1,21 @@
 @import "normalize/import-now";
+
 /** 
  * Clean Basket
  * Kim Deok Seong
  */
 
-@import "./variables";
+@import 
+	"./variables",
+	"./font",
+	"./base",
+	"./modules";
 
 /** 
  * Layout 
  */
 #header {
-	background-color: teal;
+	
 	height : $header-height;
 }
 
@@ -22,7 +27,7 @@
 }
 
 #hero {
-	background-color: snow;
+	background-color: teal;
 	li {
 		display: none;
 	}
@@ -31,6 +36,16 @@
 #area {
 	background-color: tomato;
 	height: $area-height;
+	> header {
+		h2 {
+			font-size: 40px;
+			font-weight: inherit;
+		}
+		height: $area-header-height;
+		background-color: $brand-color;
+
+		font-weight: 500;
+	}
 }
 
 #process {
