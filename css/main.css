@@ -1,8 +1,13 @@
+/** 
+ * Clean Basket
+ * Kim Deok Seong
+ */
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /**
      * 1. Change the default font family in all browsers (opinionated).
      * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
      */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -394,35 +399,165 @@ optgroup {
 textarea {
   overflow: auto; }
 
-/** 
- * Clean Basket
- * Kim Deok Seong
+/**
+ * header
+ */
+/**
+ * nav
+ */
+/**
+ * footer
+ */
+/**
+ * container
+ */
+/**
+ * btn
  */
 /**
  * variables
- *
+ */
+html {
+  font-family: 'Noto Sans KR', sans-serif; }
+
+.container {
+  width: 1280px;
+  margin: 0 auto; }
+
+.container-fluid {
+  width: auto;
+  margin: 0 60px; }
+
+.nav {
+  font-size: 18px; }
+  .nav-link {
+    margin-right: 50px;
+    color: black;
+    text-decoration: none; }
+
+.btn {
+  color: black;
+  background-color: white;
+  padding: 12px 24px;
+  border: 1px solid white;
+  border-radius: 3px;
+  line-height: 100%; }
+  .btn-primary {
+    color: white;
+    background-color: #5ddbdb;
+    border-color: #6cbeb4; }
+  .btn-border {
+    color: #5ddbdb;
+    background-color: white;
+    border-color: #5ddbdb; }
+
+.vertical-divider:before {
+  content: "|"; }
+
+/*
+ * needs
+ *  header-height
+ *  header-min-width;
+ *  header-max-width;
+ *  header-v-padding
  */
 /**
- * layout
+ * header
  */
-/** 
- * Layout 
+/**
+ * nav
  */
-#header {
-  background-color: teal;
-  height: 90px; }
+/**
+ * footer
+ */
+/**
+ * container
+ */
+/**
+ * btn
+ */
+.header {
+  min-width: 1280px;
+  max-width: 1920px;
+  margin: 0 auto; }
+  .header-logo > img {
+    margin-top: 21px; }
+  .header .container, .header .container-fluid {
+    height: 100%; }
 
+.header {
+  height: 95px;
+  line-height: 95px; }
+
+/**
+ * header
+ */
+/**
+ * nav
+ */
+/**
+ * footer
+ */
+/**
+ * container
+ */
+/**
+ * btn
+ */
+.footer {
+  position: relative;
+  height: 137px; }
+
+.footer {
+  height: 137px;
+  color: white;
+  background-color: #323c3e;
+  font-weight: lighter; }
+  .footer .container-fluid {
+    padding-top: 44px; }
+  .footer-info {
+    color: white;
+    font-size: 13px;
+    line-height: 100%; }
+  .footer strong {
+    font-weight: normal;
+    color: #5ddbdb; }
+  .footer p {
+    margin: 0 0 8px 0; }
+  .footer .vertical-divider:before {
+    color: grey;
+    margin: 0 10px; }
+
+.header-inverted {
+  color: white;
+  background-color: #5ddbdb; }
+  .header-inverted .btn-primary {
+    color: #5ddbdb;
+    background-color: white;
+    border-color: white; }
+  .header-inverted .btn-secondary {
+    color: white;
+    background-color: #6cbeb4;
+    border-color: #6cbeb4; }
+
+/* ======================================================
+ * Layout 
+ * ====================================================== */
 #nav {
   float: right; }
 
 #hero {
-  background-color: snow; }
+  background-color: teal; }
   #hero li {
     display: none; }
 
 #area {
   background-color: tomato;
   height: 631px; }
+  #area > header {
+    height: 127px;
+    background-color: #5ddbdb;
+    font-weight: 500; }
 
 #process {
   background-color: forestgreen;
@@ -431,7 +566,3 @@ textarea {
 #detail {
   background-color: palevioletred;
   height: 1180px; }
-
-#footer {
-  background-color: steelblue;
-  height: 137px; }
