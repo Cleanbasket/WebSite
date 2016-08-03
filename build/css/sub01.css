@@ -1,5 +1,6 @@
 /** 
  * Clean Basket
+ * sub01
  * Kim Deok Seong
  */
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
@@ -417,9 +418,6 @@ textarea {
 /**
  * btn
  */
-/**
- * variables
- */
 html {
   font-family: 'Noto Sans KR', sans-serif; }
 
@@ -545,38 +543,26 @@ html {
     color: grey;
     margin: 0 10px; }
 
-.header-inverted {
-  color: white;
-  background-color: #5ddbdb; }
-  .header-inverted .btn-primary {
-    color: #5ddbdb;
-    background-color: white;
-    border-color: white; }
-  .header-inverted .btn-secondary {
-    color: white;
-    background-color: #6cbeb4;
-    border-color: #6cbeb4; }
-
-/* ======================================================
- * Layout 
- * ====================================================== */
-#hero {
-  background-color: teal; }
-  #hero li {
-    display: none; }
-
-#area {
+.titlebar {
   background-color: tomato;
-  height: 631px; }
-  #area > header {
-    height: 127px;
-    background-color: #5ddbdb;
+  text-align: center;
+  height: 330px; }
+  .titlebar.titlebar-tabs h1 {
+    padding-top: 72px; }
+  .titlebar.titlebar-tabs .tabs {
+    margin-top: 37px; }
+  .titlebar h1 {
+    margin: 0;
+    padding-top: 98px;
+    font-size: 60px;
     font-weight: 500; }
+  .titlebar p {
+    font-size: 20px;
+    margin-top: 2px; }
+  .titlebar .btn {
+    margin: 0 5px;
+    width: 240px;
+    height: 60px; }
 
-#process {
-  background-color: forestgreen;
-  height: 820px; }
-
-#detail {
-  background-color: palevioletred;
-  height: 1180px; }
+.content {
+  padding-top: 50px; }
