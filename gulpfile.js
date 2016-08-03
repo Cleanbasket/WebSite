@@ -34,6 +34,7 @@ gulp.task('copy-public', copyPublicTask);
 gulp.task('browser-sync', browserSyncTask);
 gulp.task('browser-sync-watch', browserSyncTask.watch)
 gulp.task('build-pages', buildPagesTask);
+gulp.task('build-pages-ghPages', buildPagesTask.ghPages)
 gulp.task('build-watch', buildPagesTask.watch);
 
 gulp.task('build', function (done) {
@@ -42,6 +43,14 @@ gulp.task('build', function (done) {
     'build-pages', 
     'copy-public', 
     done);
+})
+
+gulp.task('build-ghPages', function (done) {
+  runSequence(
+    'del', 
+    'build-pages-ghPages', 
+    'copy-public', 
+    done);  
 })
 
 gulp.task('serve', function (done) {

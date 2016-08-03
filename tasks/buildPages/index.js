@@ -16,9 +16,21 @@ function getSrc(filepath) {
 module.exports = function () {
   var streams = [];
   for (page in config.build.src) {
-    streams.push(buildPage(config.build.src[page]));
+    streams.push(buildPage(config.build.src[page], {
+      rootPath: ''
+    }));
   }
   return mergeStream(streams);
+}
+
+module.exports.ghPages = function () {
+  var streams = [];
+  for (page in config.build.src) {
+    streams.push(buildPage(config.build.src[page], {
+      rootPath: '/WebSite'
+    }));
+  }
+  return mergeStream(streams); 
 }
 
 module.exports.watch = function () {
