@@ -24,8 +24,8 @@ npm과 bower의 dependency를 설치합니다.
 
 ## Demo
 
-진행상황은 cleanbasket.github.io/website/(페이지이름.html)로 확인할 수 있습니다.
+진행상황은 cleanbasket.github.io/WebSite/(페이지이름.html)로 확인할 수 있습니다.
 
-- [main](http://cleanbasket.github.io/website/main.html)
+- [main](http://cleanbasket.github.io/WebSite/main.html)
 
 실시간은 아니며 master로 커밋된 빌드에 한해 deploy하고 있습니다.
