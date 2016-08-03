@@ -1,0 +1,48 @@
+$titlebar-space-title : 98px;
+$titlebar-space-sub : 2px;
+
+$titlebar-withtabs-space-title : 72px;
+$titlebar-withtabs-space-sub : 2px;
+$titlebar-withtabs-space-tabs : 37px;
+
+$titlebar-btn-width: 240px;
+$titlebar-btn-height: 60px;
+
+.titlebar {
+  background-color: tomato;
+  text-align: center;
+  // position : relative;
+  height: $title-height;
+  
+  &.titlebar-tabs {
+    h1 {
+      padding-top : $titlebar-withtabs-space-title;
+    }
+
+    // p {
+    //   margin-top: $titlebar-withtabs-space-sub;
+    // }
+
+    .tabs {
+      margin-top: $titlebar-withtabs-space-tabs;
+    }
+  }
+
+  h1 {
+    margin: 0;
+    padding-top : $titlebar-space-title;
+    font-size : 60px;
+    font-weight : 500;
+  }
+  p {
+    font-size: 20px;
+    margin-top: $titlebar-space-sub;
+  }
+
+  .btn {
+    margin : 0 5px;
+    width: $titlebar-btn-width;
+    height: $titlebar-btn-height;
+  }
+  
+}

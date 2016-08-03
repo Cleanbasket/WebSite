@@ -6,6 +6,26 @@
 				"sass": "main/sass/main.scss",
 				"js": "main/js/main.js",
 				"dest": ""
+			},
+			"sub01": {
+				"html": "sub01/sub01.html",
+				"sass": "sub01/sass/sub01.scss",
+				"dest": ""
+			},
+			"sub02": {
+				"html": "sub02/sub02.html",
+				"sass": "sub02/sass/sub02.scss",
+				"dest": ""
+			},
+			"sub03": {
+				"html": "sub03/sub03.html",
+				"sass": "sub03/sass/sub03.scss",
+				"dest": ""
+			},
+			"sub04": {
+				"html": "sub04/sub04.html",
+				"sass": "sub04/sass/sub04.scss",
+				"dest": ""
 			}
 		},
 		"dest": "build/",
