@@ -1,0 +1,12 @@
+.vertical-divider {
+  // height : 100%;
+  // width : 1px;
+  // background-color: grey;
+  &:before { 
+    content : "|";
+  }
+  // border-width: 0 1px;
+  // border-style: solid;
+  // border-color: grey;
+  // margin: 0 10px;
+}

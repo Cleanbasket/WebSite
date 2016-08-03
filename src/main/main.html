@@ -7,29 +7,66 @@
 <body>
 	<div id="root">
 		<!-- header -->
-		<header id="header">
-			<a href="#"></a>
-			<nav id="nav">
-				<a href="">크바연구소</a>
-				<a href="">문의하기</a>
-				<a href="">소개</a>
-				<a href="">크린파트너모집</a>
-			</nav>
+		<header id="header" class='header'>
+			<div class="container-fluid">
+				<a class='header-logo' href="#">
+					<!-- <img src='http://placehold.it/280x54'> -->
+					<img src="/image/top_logo.png">
+				</a>
+				<nav id="nav" class='nav'>
+					<a class='nav-link' href="">크바연구소</a>
+					<a class='nav-link' href="">문의하기</a>
+					<a class='nav-link' href="">소개</a>
+					<a class='nav-link' href="">크린파트너모집</a>
+					<a href=""><button class='btn btn-border'>주문하기</button></a>
+				</nav>		
+			</div>
 		</header>
 
 		<div id="hero">
 			
-			hello jijij
+			hero
 		</div>
 		
-		<div id="area"></div>
+		<div id="area">
+			<header class="header-inverted">
+				<div class="container">
+					<h2>서비스 지역</h2>
+					<div class='divider vertical-divider'></div>
+					<p>서비스가 가능한 지역을 확인해 보세요</p>
+					<div class="input">
+						<span class='icon icon-gps'></span>
+						<input />
+					</div>
+					<button class="btn btn-primary">확인</button>
+					<button class="btn btn-secondary">
+						<span class='icon'></span>
+						서비스지역 전체보기
+					</button>
+				</div>
+			</header>
+		</div>
 		<div id="process"></div>
 		<div id="detail"></div>
-		<div id="appinfo"></div>
+		<div id="appinfo">
+			<!-- <a href="https://itunes.apple.com/kr/app/keulinbaseukes-nae-son-ui/id933165319?mt=8">크린바스켓 - 내 손안의 세탁소 - WashAppKorea</a> -->
+		</div>
 		<!-- footer -->
-		<footer id="footer">
-			
+		<footer id="footer" class='footer'>
+			<div class="container-fluid">
+				<p class='footer-info'>고객센터 1833-8543<span class="vertical-divider"></span>help@cleanbasket.co.kr</p>
+				<p class='footer-info'>(주)워시앱코리아<span class="vertical-divider"></span>대표이사 김우진<span class="vertical-divider"></span>사업자번호 220-88-86968<span class="vertical-divider"></span>주소 서울 강남구 봉은사로16길 16 타비쉬빌딩 1층</p>
+				<p class='footer-info'>Copyright © <strong>Wash App Korea.</strong> All rights reserved.</p>
+			</div>
 		</footer>
 	</div>
 </body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </html>

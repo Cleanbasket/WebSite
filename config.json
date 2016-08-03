@@ -8,7 +8,9 @@
 				"dest": ""
 			}
 		},
-		"dest": "build/"	
+		"dest": "build/",
+		"publicPath": "public/"
+
 	},
 
 	"browserSync": {

@@ -1,0 +1,49 @@
+$brand-color : #5ddbdb;
+$dark-brand-color : #6cbeb4;
+$dbc: #72cbcf;
+
+$desktop-small : 1280px;
+$desktop-large : 1920px;
+
+
+/**
+ * header
+ */
+$logo-height: 53px !default;
+
+$header-height : 95px !default;
+$header-min-width : $desktop-small !default;
+$header-max-width : $desktop-large !default;
+$header-v-padding: ($header-height - $logo-height)/2 !default;
+
+/**
+ * nav
+ */
+$nav-font-size: 18px;
+// $nav-vertical-padding: $header-v-padding;
+// $nav-body-height: $header-height - ($nav-vertical-padding * 2);
+$nav-gutter: 50px;
+$nav-font-color: black;
+
+/**
+ * footer
+ */
+$footer-color: white;
+$footer-divider-color: grey;
+$footer-background-color: #323c3e;
+
+/**
+ * container
+ */
+$container-width: $desktop-small;
+$container-fluid-margin: 60px;
+
+/**
+ * btn
+ */
+$btn-v-padding: 12px;
+$btn-h-padding: 24px;
+$btn-border-size: 1px;
+$btn-color: $brand-color;
+$btn-background-color: white;
+$btn-border-radius: 3px;
