@@ -4,9 +4,9 @@
   padding: $btn-v-padding $btn-h-padding;
   border: $btn-border-size solid white;
   border-radius: $btn-border-radius;
-
   line-height: 100%;
-  &-primary {
+  font-size: 18px;
+  &-filled {
     color: white;
     background-color: $brand-color;
     border-color: $dark-brand-color;
@@ -16,5 +16,12 @@
     color: $brand-color;
     background-color: white;
     border-color: $brand-color;
+  }
+
+  &-transparent {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    // opacity: 0.8;
   }
 }
