@@ -8,7 +8,8 @@ module.exports = function buildSass(target) {
 	return gulp.src(path.join('src', target.sass))
 		.pipe(sass({
 			includePaths: [
-				"public/bower_components/normalize-scss/sass"
+				"public/bower_components/normalize-scss/sass",
+        "src/common"
 			]
 		}).on('error', sass.logError))
 		.pipe(gulp.dest(path.join(config.build.dest, target.dest, 'css')))

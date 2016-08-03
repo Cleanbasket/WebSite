@@ -4,9 +4,10 @@ var config = require('../config.json');
 
 function browserSyncTask () {
 	browserSync.init({
-		server: {
-			baseDir: config.build.dest
-		},
+		// server: {
+		// 	baseDir: config.build.dest
+		// },
+    server: [config.build.dest, "./public"],
 		open : false
 	})
 }

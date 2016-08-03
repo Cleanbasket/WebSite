@@ -1,0 +1,17 @@
+.nav {
+  font-size: $nav-font-size;
+
+  &-link {
+    // line-height: $nav-font-size;
+    margin-right: $nav-gutter; 
+
+    color: $nav-font-color;
+    text-decoration: none;
+    // &:visited 
+    // &:active
+    // &:hover
+    // &:link {
+    //   color: $nav-font-color;
+    // }
+  }
+}

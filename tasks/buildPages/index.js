@@ -24,11 +24,16 @@ module.exports = function () {
 module.exports.watch = function () {
   gulp.watch("src/**/*.scss", function (e) {
     var name = getSrc(e.path);
-    buildSass(config.build.src[name]);
+    if (name === "common") {
+      for (page in config.build.src) {
+        buildSass(config.build.src[page]);
+      }     
+    } else {
+      buildSass(config.build.src[name]);  
+    }
   });
   gulp.watch("src/**/*.html", function (e) {
     var name = getSrc(e.path);
-    console.log(name);
     buildHtml(config.build.src[name]);
   });
 }

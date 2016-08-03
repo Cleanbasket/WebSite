@@ -1,23 +1,33 @@
-@import "normalize/import-now";
-
 /** 
  * Clean Basket
  * Kim Deok Seong
  */
 
 @import 
-	"./variables",
-	"./font",
-	"./base",
-	"./modules";
+	"normalize/import-now",
+	"variables.default",
+	"variables",
+	"base.common",
+	//common
+	"container",
+	"nav",
+	"btn",
+	"verticalDivider",
+	"header",
+	"footer",
+	//page
+	"modules",
+	"theme";
 
-/** 
+// @import 
+// 	"./variables",
+// 	"./base",
+// 	"./modules",
+// 	"./theme";
+
+/* ======================================================
  * Layout 
- */
-#header {
-	
-	height : $header-height;
-}
+ * ====================================================== */
 
 #nav {
 	float: right;
@@ -38,8 +48,7 @@
 	height: $area-height;
 	> header {
 		h2 {
-			font-size: 40px;
-			font-weight: inherit;
+
 		}
 		height: $area-header-height;
 		background-color: $brand-color;
@@ -58,7 +67,3 @@
 	height: $detail-height;
 }
 
-#footer {
-	background-color: steelblue;
-	height: $footer-height;
-}

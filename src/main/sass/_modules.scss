@@ -1,73 +1,3 @@
-$header-v-padding: ($header-height - $logo-height)/2;
-$header-h-padding: 60px;
-
-$header-h-padding: 60px;
-
-$nav-font-size: 18px;
-// $nav-vertical-padding: $header-v-padding;
-// $nav-body-height: $header-height - ($nav-vertical-padding * 2);
-$nav-gutter: 50px;
-
-$nav-font-color: black;
-// $nav-body-height: $header-height - ($nav-vertical-padding * 2);
-
-$btn-v-padding: 12px;
-$btn-h-padding: 24px;
-$btn-border-size: 1px;
-$btn-color: $brand-color;
-$btn-background-color: white;
-
-.header {
-  box-sizing: border-box;
-  padding: 0 $header-h-padding;
-  line-height: $header-height;
-  min-width : 1920px;
-  &-logo {
-    > img {
-      padding: $header-v-padding 0;
-    }
-  }
-  
-}
-
-.nav {
-  font-size: $nav-font-size;
-
-  &-link {
-    // line-height: $nav-font-size;
-    margin-right: $nav-gutter; 
-
-    color: $nav-font-color;
-    text-decoration: none;
-    // &:visited 
-    // &:active
-    // &:hover
-    // &:link {
-    //   color: $nav-font-color;
-    // }
-  }
-}
-
-.btn {
-  color: black;
-  background-color: white;
-  padding: $btn-v-padding $btn-h-padding;
-  border: $btn-border-size solid white;
-  
-  line-height: 100%;
-  &-primary {
-    color: white;
-    background-color: $brand-color;
-    border-color: $dark-brand-color;
-  }
-
-  &-border {
-    color: $brand-color;
-    background-color: white;
-    border-color: $brand-color;
-  }
-}
-
 // Theme
 .header-inverted {
   color : white;
@@ -84,3 +14,4 @@ $btn-background-color: white;
     border-color: $dark-brand-color;
   }
 }
+

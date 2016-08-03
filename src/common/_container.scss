@@ -1,0 +1,9 @@
+.container {
+  width: $container-width;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: auto;
+  margin: 0 $container-fluid-margin;
+}

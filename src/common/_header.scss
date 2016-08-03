@@ -1,0 +1,35 @@
+/*
+ * needs
+ *  header-height
+ *  header-min-width;
+ *  header-max-width;
+ *  header-v-padding
+ */
+
+@import 'variables.default';
+
+.header {
+  // box-sizing: border-box;
+  // padding: 0 $header-h-padding;
+  min-width : $header-min-width;
+  max-width: $header-max-width;
+  margin: 0 auto;
+
+  &-logo {
+    > img {
+      // line-height: 1.0;
+      // padding: $header-v-padding 0;  
+      margin-top: $header-v-padding;
+    }
+  }
+
+  .container, .container-fluid{
+    height: 100%;
+  }
+}
+
+// default theme
+.header {
+  height : $header-height;
+  line-height: $header-height;
+}

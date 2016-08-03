@@ -1,0 +1,37 @@
+@import './variables.default';
+
+.footer {
+  position : relative;
+  height: $footer-height;
+}
+
+// default theme 
+.footer {
+  height: $footer-height;
+  color: $footer-color;
+  background-color: $footer-background-color;
+  font-weight: lighter;
+
+  .container-fluid {
+    padding-top: 44px;  
+  }
+
+  &-info {
+    color: $footer-color;
+    font-size: 13px;
+    line-height: 100%;
+  }  
+
+  strong {
+    font-weight: normal;
+    color: $brand-color;
+  }
+  p {
+    margin : 0 0 8px 0;
+  }
+
+  .vertical-divider:before {
+    color: $footer-divider-color;
+    margin: 0 10px;
+  }
+}
