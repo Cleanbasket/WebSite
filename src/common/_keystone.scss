@@ -1,0 +1,22 @@
+.keystone {
+  height: 108px;
+  width: 108px;
+  line-height: 108px;
+  background-color: $dark-brand-color;
+  color: white;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  
+  text-align: center;
+  > p {
+    line-height: 1.25em;
+    font-size: 22px;
+    font-weight: bolder;
+    margin: 0;
+    padding-top: 1.3em;
+  }
+}

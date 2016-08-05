@@ -1,0 +1,76 @@
+.about {
+  position: relative;
+  &-titlebar {
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: lighter;
+      margin: 0;
+    }
+    text-align: center;
+  }
+  &-title {
+    font-size: 70px;
+    line-height: 1.1em;
+
+    padding-top: 35px;
+  }
+
+  &-subtitle {
+    font-size: 22px;
+    font-weight: normal;
+
+    padding-top: 14px;
+  }
+}
+
+.business {
+  position: relative;
+  &-titlebar {
+    height: 405px;
+    background-color: tomato;
+  }
+  &-title {
+    margin: 0;
+    padding-top: 167px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: lighter;
+
+  }
+}
+
+.company {
+  position: relative;
+  text-align: center;
+
+  background-color: #f2f5f5;
+
+  padding-bottom: 96px;
+
+  &-up {
+    margin: 0;
+
+    padding-top: 142px;
+    margin-bottom: 50px;
+    font-size: 35px;
+    line-height: 1.35em;
+
+  }
+  
+  &-down {
+    margin: 0;
+
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #aaabab;
+    font-size: 18px;
+
+    // font-weight: 500;
+  }
+
+  .btn-border {
+    color: $dark-brand-color;
+    width: 178px;
+    height: 60px;
+    border: 2px solid $dark-brand-color
+  }
+}

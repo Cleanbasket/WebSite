@@ -1,0 +1,23 @@
+$grid-gutter: 22px;
+
+.row {
+  margin: 0;
+  padding: 0;
+  margin: 0 -$grid-gutter/2;
+}
+
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+
+.col-1-of-3 {
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 33.33%;
+  padding: $grid-gutter/2;
+  min-height: 1px;
+}

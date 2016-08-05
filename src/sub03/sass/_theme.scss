@@ -1,0 +1,14 @@
+mark {
+  background-color: transparent;
+  color: $dark-brand-color;
+}
+
+.about {
+  .row {
+    margin: 0 -$about-grid-gutter/2;
+  }
+
+  .col-1-of-3 {
+    padding: $about-grid-gutter/2;
+  }
+}
