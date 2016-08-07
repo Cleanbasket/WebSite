@@ -422,6 +422,7 @@ html {
   font-family: 'Noto Sans KR', sans-serif; }
 
 .container {
+  position: relative;
   width: 1280px;
   margin: 0 auto; }
 
@@ -453,7 +454,7 @@ html {
     border-color: #72cbcf; }
   .btn-border {
     color: #5ddbdb;
-    background-color: white;
+    background-color: transparent;
     border-color: #5ddbdb; }
   .btn-transparent {
     color: black;
@@ -527,7 +528,8 @@ html {
   height: 137px;
   color: white;
   background-color: #323c3e;
-  font-weight: lighter; }
+  font-weight: lighter;
+  min-width: 1280px; }
   .footer .container-fluid {
     padding-top: 44px; }
   .footer-info {
@@ -565,7 +567,10 @@ html {
     height: 60px; }
 
 .content {
-  padding-top: 50px; }
+  min-width: 1280px;
+  max-width: 1920px;
+  padding-top: 50px;
+  margin: 0 auto; }
 
 .section {
   padding-bottom: 45px; }
@@ -636,7 +641,7 @@ html {
 .row {
   margin: 0;
   padding: 0;
-  margin: -11px; }
+  margin: 0 -11px; }
 
 .row:before,
 .row:after {
