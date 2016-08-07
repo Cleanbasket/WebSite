@@ -8,7 +8,7 @@
      * 1. Change the default font family in all browsers (opinionated).
      * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
      */
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 html {
   font-family: sans-serif;
   /* 1 */
