@@ -15,7 +15,8 @@ function browserSyncTask () {
 function browserSyncWatch () {
   gulp.watch([
   	`${config.build.dest}/**/*.html`,
-  	`${config.build.dest}/**/*.css`
+  	`${config.build.dest}/**/*.css`,
+    `${config.build.dest}/**/*.js`
   ]).on('change', browserSync.reload);
 
 }

@@ -5,6 +5,7 @@ var mergeStream = require('merge-stream');
 var buildSass = require('./buildSass');
 var buildHtml = require('./buildHtml');
 var buildPage = require('./buildPage');
+var buildJs = require('./buildJs');
 var config = require('../../config.json');
 
 function getSrc(filepath) {
@@ -44,6 +45,20 @@ module.exports.watch = function () {
       buildSass(config.build.src[name]);  
     }
   });
+
+  gulp.watch("src/**/*.js", function (e) {
+
+    var name = getSrc(e.path);
+    console.log(name);
+    if (name === "common") {
+      for (page in config.build.src) {
+        buildJs(config.build.src[page]);
+      }     
+    } else {
+      buildJs(config.build.src[name]);  
+    }
+  });
+
   gulp.watch("src/**/*.html", function (e) {
     var name = getSrc(e.path);
     buildHtml(config.build.src[name]);

@@ -1,0 +1,27 @@
+.icon {
+  overflow: hidden;
+  display: inline-block;
+  &-q {
+    height: 40px;
+    width: 40px;
+    background: url("http://placehold.it/40x40") no-repeat 0 0;
+  }
+
+  &-a {
+    height: 40px;
+    width: 40px;
+    background: url("http://placehold.it/40x40") no-repeat 0 0; 
+  }
+
+  &-arrow-up {
+    height: 14px;
+    width: 23px;
+    background: url("http://placehold.it/23x14") no-repeat 0 0; 
+  }
+
+  &-arrow-down {
+    height: 14px;
+    width: 23px;
+    background: url("http://placehold.it/23x14") no-repeat 0 0;
+  }
+}
