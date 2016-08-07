@@ -1,6 +1,6 @@
 /** 
  * Clean Basket
- * sub03
+ * sub02-1
  * Kim Deok Seong
  */
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
@@ -421,13 +421,6 @@ textarea {
 html {
   font-family: 'Noto Sans KR', sans-serif; }
 
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
 .container {
   width: 1280px;
   margin: 0 auto; }
@@ -574,24 +567,71 @@ html {
 .content {
   padding-top: 50px; }
 
-.keystone {
-  height: 108px;
-  width: 108px;
-  line-height: 108px;
-  background-color: #72cbcf;
-  color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center; }
-  .keystone > p {
-    line-height: 1.25em;
-    font-size: 22px;
-    font-weight: bolder;
+.section {
+  padding-bottom: 45px; }
+  .section-header {
+    height: 60px;
+    border-bottom: solid 1px black; }
+  .section-title {
+    font-size: 30px;
     margin: 0;
-    padding-top: 1.3em; }
+    font-weight: normal; }
+
+.expandable {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .expandable-subject {
+    margin: 0;
+    padding: 26px 0;
+    font-size: 18px;
+    font-weight: normal; }
+    .expandable-subject .icon-q {
+      position: absolute;
+      top: 20px;
+      left: 0; }
+    .expandable-subject .icon-arrow-down,
+    .expandable-subject .icon-arrow-up {
+      position: absolute;
+      top: 34px;
+      right: 0; }
+  .expandable-inner {
+    position: relative;
+    display: none; }
+    .expandable-inner p {
+      font-size: 16px;
+      margin: 0;
+      padding: 30px 0; }
+    .expandable-inner .icon-a {
+      position: absolute;
+      top: 20px;
+      left: 0; }
+    .opened .expandable-inner {
+      display: block; }
+  .expandable-subject, .expandable-inner {
+    position: relative;
+    padding-left: 60px;
+    border-bottom: solid 1px #ccc; }
+
+.icon {
+  overflow: hidden;
+  display: inline-block; }
+  .icon-q {
+    height: 40px;
+    width: 40px;
+    background: url("http://placehold.it/40x40") no-repeat 0 0; }
+  .icon-a {
+    height: 40px;
+    width: 40px;
+    background: url("http://placehold.it/40x40") no-repeat 0 0; }
+  .icon-arrow-up {
+    height: 14px;
+    width: 23px;
+    background: url("http://placehold.it/23x14") no-repeat 0 0; }
+  .icon-arrow-down {
+    height: 14px;
+    width: 23px;
+    background: url("http://placehold.it/23x14") no-repeat 0 0; }
 
 .row {
   margin: 0;
@@ -612,100 +652,5 @@ html {
   padding: 11px;
   min-height: 1px; }
 
-.about {
-  position: relative; }
-  .about-titlebar {
-    text-align: center; }
-    .about-titlebar h1, .about-titlebar h2, .about-titlebar h3, .about-titlebar h4, .about-titlebar h5, .about-titlebar h6 {
-      font-weight: lighter;
-      margin: 0; }
-  .about-title {
-    font-size: 70px;
-    line-height: 1.1em;
-    padding-top: 35px; }
-  .about-subtitle {
-    font-size: 22px;
-    font-weight: normal;
-    padding-top: 14px; }
-  .about-detail {
-    margin-top: 115px; }
-  .about-bar {
-    border: 3px solid #72cbcf;
-    width: 60px;
-    margin: 4px; }
-  .about-subject {
-    font-weight: lighter;
-    font-size: 40px; }
-  .about-text {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 1.45em; }
-
-.business {
-  position: relative;
-  margin-top: 171px; }
-  .business-titlebar {
-    height: 405px;
-    background-color: tomato; }
-  .business-title {
-    margin: 0;
-    padding-top: 167px;
-    text-align: center;
-    font-size: 60px;
-    font-weight: lighter; }
-  .business-detail {
-    padding-top: 55px;
-    padding-bottom: 98px; }
-    .business-detail-item {
-      padding: 55px 0;
-      clear: both; }
-      .business-detail-item .left {
-        float: left;
-        font-size: 35px;
-        letter-spacing: -0.1em;
-        line-height: 1.2em;
-        display: inline-block;
-        width: 40%;
-        margin: 0 15px; }
-      .business-detail-item .right {
-        font-size: 18px;
-        letter-spacing: -0.1em;
-        font-weight: 300;
-        float: right;
-        display: inline-block;
-        width: 650px;
-        margin: 0 30px; }
-
-.company {
-  position: relative;
-  text-align: center;
-  clear: both;
-  background-color: #f2f5f5;
-  padding-bottom: 96px; }
-  .company-up {
-    margin: 0;
-    padding-top: 142px;
-    margin-bottom: 50px;
-    font-size: 35px;
-    line-height: 1.35em; }
-  .company-down {
-    margin: 0;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    color: #aaabab;
-    font-size: 18px; }
-  .company .btn-border {
-    color: #72cbcf;
-    width: 178px;
-    height: 60px;
-    border: 2px solid #72cbcf; }
-
-mark {
-  background-color: transparent;
-  color: #72cbcf; }
-
-.about .row {
-  margin: -75px; }
-
-.about .col-1-of-3 {
-  padding: 75px; }
+.content {
+  padding-bottom: 50px; }

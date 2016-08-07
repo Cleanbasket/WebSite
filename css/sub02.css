@@ -450,7 +450,7 @@ html {
   .btn-filled {
     color: white;
     background-color: #5ddbdb;
-    border-color: #6cbeb4; }
+    border-color: #72cbcf; }
   .btn-border {
     color: #5ddbdb;
     background-color: white;
@@ -566,3 +566,91 @@ html {
 
 .content {
   padding-top: 50px; }
+
+.section {
+  padding-bottom: 45px; }
+  .section-header {
+    height: 60px;
+    border-bottom: solid 1px black; }
+  .section-title {
+    font-size: 30px;
+    margin: 0;
+    font-weight: normal; }
+
+.expandable {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .expandable-subject {
+    margin: 0;
+    padding: 26px 0;
+    font-size: 18px;
+    font-weight: normal; }
+    .expandable-subject .icon-q {
+      position: absolute;
+      top: 20px;
+      left: 0; }
+    .expandable-subject .icon-arrow-down,
+    .expandable-subject .icon-arrow-up {
+      position: absolute;
+      top: 34px;
+      right: 0; }
+  .expandable-inner {
+    position: relative;
+    display: none; }
+    .expandable-inner p {
+      font-size: 16px;
+      margin: 0;
+      padding: 30px 0; }
+    .expandable-inner .icon-a {
+      position: absolute;
+      top: 20px;
+      left: 0; }
+    .opened .expandable-inner {
+      display: block; }
+  .expandable-subject, .expandable-inner {
+    position: relative;
+    padding-left: 60px;
+    border-bottom: solid 1px #ccc; }
+
+.icon {
+  overflow: hidden;
+  display: inline-block; }
+  .icon-q {
+    height: 40px;
+    width: 40px;
+    background: url("http://placehold.it/40x40") no-repeat 0 0; }
+  .icon-a {
+    height: 40px;
+    width: 40px;
+    background: url("http://placehold.it/40x40") no-repeat 0 0; }
+  .icon-arrow-up {
+    height: 14px;
+    width: 23px;
+    background: url("http://placehold.it/23x14") no-repeat 0 0; }
+  .icon-arrow-down {
+    height: 14px;
+    width: 23px;
+    background: url("http://placehold.it/23x14") no-repeat 0 0; }
+
+.row {
+  margin: 0;
+  padding: 0;
+  margin: -11px; }
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col-1-of-3 {
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 33.33%;
+  padding: 11px;
+  min-height: 1px; }
+
+.content {
+  padding-bottom: 50px; }
