@@ -11,7 +11,8 @@
   color: $footer-color;
   background-color: $footer-background-color;
   font-weight: lighter;
-
+  
+  min-width: $desktop-small;
   .container-fluid {
     padding-top: 44px;  
   }

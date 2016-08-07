@@ -3,7 +3,7 @@ $grid-gutter: 22px;
 .row {
   margin: 0;
   padding: 0;
-  margin: 0 -$grid-gutter/2;
+  margin: 0 (-$grid-gutter/2);
 }
 
 .row:before, 

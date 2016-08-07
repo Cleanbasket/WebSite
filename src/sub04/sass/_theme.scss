@@ -1,0 +1,42 @@
+$environment-grid-gutter: 0px;
+
+mark {
+  background-color: transparent;
+  color: $brand-color;
+}
+
+.environment {
+  .keystone {
+    top: 93px;
+    width: 104px;
+    height: 104px;
+    background-color: transparent;
+    border: 2px solid $dark-brand-color;
+    color: $dark-brand-color;
+    >p {
+      padding-top: 23px;
+    }
+  }
+
+  .row {
+    margin: 0 -$environment-grid-gutter/2;
+  }
+
+  .col-1-of-3 {
+    padding: $environment-grid-gutter/2;
+  }
+}
+
+.qualifi {
+  .keystone {
+    color: $dark-brand-color;
+    background-color: white;
+  }
+
+  .btn-border {
+    color: white;
+    border: 2px solid white;
+    width: 180px;
+    height: 60px;
+  }
+}

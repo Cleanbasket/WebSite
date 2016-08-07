@@ -1,5 +1,9 @@
 $content-padding-top: 50px;
 
 .content {
+  min-width: $desktop-small;
+  max-width: $desktop-large;
   padding-top: $content-padding-top;
+
+  margin: 0 auto;
 }
