@@ -20,10 +20,32 @@
 
     padding-top: 14px;
   }
+
+  &-detail {
+    margin-top: 115px;
+  }
+
+  &-bar {
+    border: 3px solid $dark-brand-color;
+    width : 60px;
+    margin : 4px;
+  }
+
+  &-subject {
+    font-weight: lighter;
+    font-size: 40px;
+  }
+
+  &-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.45em;
+  }
 }
 
 .business {
   position: relative;
+  margin-top: 171px;
   &-titlebar {
     height: 405px;
     background-color: tomato;
@@ -36,11 +58,43 @@
     font-weight: lighter;
 
   }
+
+  &-detail {
+    padding-top: 55px;
+    padding-bottom: 98px;
+    &-item {
+      padding: 55px 0;
+      clear:both;
+
+      .left {
+        float: left;
+        font-size: 35px;
+        letter-spacing: -0.1em;
+
+        line-height: 1.2em;
+        display: inline-block;
+        width : 40%;
+        margin : 0 15px;
+      }
+
+      .right {
+        font-size: 18px;
+        letter-spacing: -0.1em;
+        font-weight: 300;
+
+        float: right;
+        display: inline-block;
+        width : 650px;
+        margin: 0 30px;
+      }
+    }
+  }
 }
 
 .company {
   position: relative;
   text-align: center;
+  clear: both;
 
   background-color: #f2f5f5;
 

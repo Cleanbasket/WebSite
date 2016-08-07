@@ -33,3 +33,9 @@ npm과 bower의 dependency를 설치합니다.
 - [크린파트너](http://cleanbasket.github.io/WebSite/sub04.html)
 
 실시간은 아니며 master로 커밋된 빌드에 한해 deploy하고 있습니다.
+
+## Code
+
+### common 
+
+페이지마다 공통적으로 쓰이는 코드들이 들어있습니다.

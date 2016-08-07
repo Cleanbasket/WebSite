@@ -42,6 +42,9 @@ $expandbale-border-color: #ccc;
       left: 0;
     }
     display: none;
+    .opened & {
+      display: block;
+    }
   }
 
   &-subject, 

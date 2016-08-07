@@ -15,6 +15,12 @@
 			"sub02": {
 				"html": "sub02/sub02.html",
 				"sass": "sub02/sass/sub02.scss",
+				"js": "sub02/js/sub02.js",
+				"dest": ""
+			},
+			"sub02-1": {
+				"html": "sub02-1/sub02-1.html",
+				"sass": "sub02-1/sass/sub02-1.scss",
 				"dest": ""
 			},
 			"sub03": {
