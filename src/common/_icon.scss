@@ -1,6 +1,17 @@
 .icon {
   overflow: hidden;
   display: inline-block;
+  
+  &-gps {
+    height: 29px;
+    width: 29px;
+    background: url("#{$rootPath}/image/icon_gps.png") no-repeat 0 0;
+  }
+  &-map {
+    height: 23px;
+    width: 23px;
+    background: url("#{$rootPath}/image/icon_map.png") no-repeat 0 0;
+  }
   &-q {
     height: 40px;
     width: 40px;

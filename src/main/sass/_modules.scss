@@ -1,17 +1,324 @@
-// Theme
-.header-inverted {
-  color : white;
-  background-color: $brand-color;
-  .btn-primary {
-    color: $brand-color;
-    background-color: white;
-    border-color: white;
+#hero {
+  .swiper-container {
+    height: 100%;
+  }
+  .swiper-slide {
+    height: 100%;
+    background-size: cover;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 60px;
+    height: 103px;
+    background-size: 60px 103px;
+  }
+
+  .swiper-button-prev {
+    background-image: url("#{$rootPath}/image/ic_next_left.png");
+  }
+  .swiper-button-next {
+    background-image: url("#{$rootPath}/image/ic_next_right.png");
   }
   
-  .btn-secondary {
-    color : white;
-    background-color: $dark-brand-color;
-    border-color: $dark-brand-color;
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    margin: 0 10px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $brand-color;
+  }
+
+  .swiper-pagination-bullets, 
+  .swiper-pagination-custom, 
+  .swiper-pagination-fraction {
+    bottom: 60px; 
+  }
+
+  .slide-one {
+    background: url("#{$rootPath}/image/bg_1.png") no-repeat center center;
+  }
+
+  .slide-two {
+    background: url("#{$rootPath}/image/bg_2.png") no-repeat center center; 
+  }
+ 
+}
+
+.area {
+  color: white;
+  
+  height: 631px;
+
+  vertical-align: middle;
+  &-header {
+    height: 127px;
+    line-height: 127px;
+    background-color: $brand-color;
+  }
+
+  &-left {
+    float: left;
+    vertical-align: middle;
+  }
+
+  &-right {
+    float: right;
+  }
+  &-title {
+    display: inline-block;
+
+    font-size: 40px;
+    font-weight: $font-bold;    
+    letter-spacing: -0.08em;
+    vertical-align: middle;
+  }
+
+  &-text {
+    margin: 0;
+    display: inline-block;
+
+    font-size: 18px;
+    font-weight: $font-bold;
+    letter-spacing: -0.08em;
+    vertical-align: middle;
+  }
+
+  &-location {
+    // vertical-align: baseline;
+    width: 308px;
+    display: inline-block; 
+    > input {
+      margin-left: 20px;
+      width: 250px;
+      font-size: 18px;
+      line-height: 1.0em;
+      font-weight: $font-medium;
+      border: none;
+      background-color: transparent;
+      color: white;
+    }
+    height: 52px;
+    line-height: 52px;
+    border-bottom: 1px solid white;
+
+    .icon {
+      // padding-top: 23px;
+      vertical-align: middle;
+      // line-height: 23px;
+    }
+  }
+
+  &-submit {
+    width : 153px;
+    margin-left: 13px;
+
+    vertical-align: middle;
+  }
+
+  &-seeall {
+    width: 204px;
+    margin-left: 10px;
+    vertical-align: middle;
+    span {
+      vertical-align: baseline;
+    }
+
+    .icon {
+      vertical-align: middle;
+      margin-right: 5px;
+    }
   }
 }
 
+.process {
+  background: url("#{$rootPath}/image/bg_scene3.png") no-repeat center center;
+  background-size: cover;
+
+  height: 820px;
+  &-title {
+    margin: 0;
+    padding-top: 130px;
+
+    font-size: 70px;
+    text-align: center;
+    line-height: 1.1em;
+    letter-spacing: -0.075em;
+
+    &-first {
+      color: $brand-color;
+      font-weight: $font-thin;
+    }
+    &-second {
+      color: white;
+      font-weight: $font-medium;
+    }
+  }
+  &-wrapper {
+    padding-top: 170px;
+    margin: 0 auto;
+    width: 1098px;
+  }
+  &-card {
+    position: relative;
+    color: white;
+
+    img {
+      position: absolute;
+      top: 0;
+    }
+    .bar {
+      border-bottom: 2px solid white;
+      padding-top: 120px;
+    }
+
+    h3 {
+      margin: 0;
+      padding-top: 10px;
+      font-size: 30px;
+      font-weight: $font-medium;
+    }
+
+    p {
+      margin: 0;
+      padding-top: 10px;
+      font-size: 18px;
+      font-weight: $font-regular;
+      letter-spacing: -0.07em;
+    }
+  }
+}
+
+.seemore {
+  &-item {
+    height: 590px;
+  }
+
+  &-image {
+    width: 50%;
+    height: 100%;
+    // display: inline-block;
+    float: left;
+    // background-color:tomato;
+    &-first {
+      background: url("#{$rootPath}/image/ic_scene4_image.png") no-repeat center center;
+      background-size: cover;
+    }
+    
+    &-second {
+      background: url("#{$rootPath}/image/ic_scene5_image.png") no-repeat center center;
+      background-size: cover;
+    }
+  }
+
+  &-detail {
+    width: 50%;
+    height: 100%;
+    float: left;
+
+    text-align: center;
+    // background-color: aqua;
+  }
+  
+  &-title {
+    margin: 0;
+    // padding-top: 160px;
+
+    font-size: 45px;
+    line-height: 1.1em;
+    letter-spacing: -0.08em;
+    &-first {
+      font-weight: $font-thin;
+    }
+
+    &-second {
+      font-weight: $font-medium;
+    }
+  }
+
+  &-text {
+    margin: 0;
+    
+    line-height: 1.7em;
+    font-size: 18px;
+    font-weight: $font-regular;
+    letter-spacing: -0.07em;
+  }
+
+  .btn {
+    margin-top: 15px;
+
+    font-size: 14px;
+    font-weight: $font-bold;
+    
+  }
+
+  &-wash {
+    .seemore-title {
+      padding-top: 160px;
+    }
+
+    .seemore-text {
+      padding: 29px 0;
+    }
+
+    .btn {
+      padding: 16px 25px;
+    }
+  }
+
+  &-price {
+    .seemore-title {
+      padding-top: 145px;
+    }
+
+    .seemore-text {
+      padding-top: 20px;
+    }
+
+    .btn {
+      padding: 16px 40px;
+    }
+  }
+}
+
+.appinfo {
+  height: 337px;
+  background: url("#{$rootPath}/image/bg_cb.png") no-repeat center center;
+  background-size: cover;
+
+  text-align: center;
+  &-title {
+    padding-top: 72px;
+    margin: 0;
+    color: white;
+    font-size: 40px;
+    font-weight: $font-thin;
+    letter-spacing: -0.08em;
+  }
+  .badges {
+    padding-top: 20px;
+  }
+  .badge-iphone {
+    display: inline-block;
+    width: 270px;
+    height: 80px;
+    margin: 20px;
+    margin-right: 0;
+    // overflow:hidden;
+    background: url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;
+    background-size: contain;
+  }
+
+  .badge-android {
+    display: inline-block;
+    width: 310px;
+    height: 120px;
+
+    background: url(https://play.google.com/intl/en_us/badges/images/generic/ko_badge_web_generic.png) no-repeat;
+    background-size: contain;
+  }
+}
