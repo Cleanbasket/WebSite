@@ -629,27 +629,27 @@ html {
   .icon-gps {
     height: 29px;
     width: 29px;
-    background: url("/image/icon_gps.png") no-repeat 0 0; }
+    background: url("/WebSite/image/icon_gps.png") no-repeat 0 0; }
   .icon-map {
     height: 23px;
     width: 23px;
-    background: url("/image/icon_map.png") no-repeat 0 0; }
+    background: url("/WebSite/image/icon_map.png") no-repeat 0 0; }
   .icon-q {
     height: 40px;
     width: 40px;
-    background: url("/image/icon_q.png") no-repeat 0 0; }
+    background: url("/WebSite/image/icon_q.png") no-repeat 0 0; }
   .icon-a {
     height: 40px;
     width: 40px;
-    background: url("/image/icon_a.png") no-repeat 0 0; }
+    background: url("/WebSite/image/icon_a.png") no-repeat 0 0; }
   .icon-arrow-up {
     height: 13px;
     width: 23px;
-    background: url("/image/icon_arrow_up.png") no-repeat 0 0; }
+    background: url("/WebSite/image/icon_arrow_up.png") no-repeat 0 0; }
   .icon-arrow-down {
     height: 13px;
     width: 23px;
-    background: url("/image/icon_arrow_down.png") no-repeat 0 0; }
+    background: url("/WebSite/image/icon_arrow_down.png") no-repeat 0 0; }
 
 #hero .swiper-container {
   height: 100%; }
@@ -665,10 +665,10 @@ html {
   background-size: 60px 103px; }
 
 #hero .swiper-button-prev {
-  background-image: url("/image/ic_next_left.png"); }
+  background-image: url("/WebSite/image/ic_next_left.png"); }
 
 #hero .swiper-button-next {
-  background-image: url("/image/ic_next_right.png"); }
+  background-image: url("/WebSite/image/ic_next_right.png"); }
 
 #hero .swiper-pagination-bullet {
   width: 15px;
@@ -685,10 +685,10 @@ html {
   bottom: 60px; }
 
 #hero .slide-one {
-  background: url("/image/bg_1.png") no-repeat center center; }
+  background: url("/WebSite/image/bg_1.png") no-repeat center center; }
 
 #hero .slide-two {
-  background: url("/image/bg_2.png") no-repeat center center; }
+  background: url("/WebSite/image/bg_2.png") no-repeat center center; }
 
 .area {
   color: white;
@@ -748,7 +748,7 @@ html {
       margin-right: 5px; }
 
 .process {
-  background: url("/image/bg_scene3.png") no-repeat center center;
+  background: url("/WebSite/image/bg_scene3.png") no-repeat center center;
   background-size: cover;
   height: 820px; }
   .process-title {
@@ -797,10 +797,10 @@ html {
   height: 100%;
   float: left; }
   .seemore-image-first {
-    background: url("/image/ic_scene4_image.png") no-repeat center center;
+    background: url("/WebSite/image/ic_scene4_image.png") no-repeat center center;
     background-size: cover; }
   .seemore-image-second {
-    background: url("/image/ic_scene5_image.png") no-repeat center center;
+    background: url("/WebSite/image/ic_scene5_image.png") no-repeat center center;
     background-size: cover; }
 
 .seemore-detail {
@@ -851,7 +851,7 @@ html {
 
 .appinfo {
   height: 337px;
-  background: url("/image/bg_cb.png") no-repeat center center;
+  background: url("/WebSite/image/bg_cb.png") no-repeat center center;
   background-size: cover;
   text-align: center; }
   .appinfo-title {
