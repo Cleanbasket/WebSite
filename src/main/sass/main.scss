@@ -9,12 +9,19 @@
 	"variables",
 	"base.common",
 	//common
-	"container",
-	"nav",
-	"btn",
-	"verticalDivider",
-	"header",
-	"footer",
+
+	"clearfix",
+  "container",
+  "nav",
+  "btn",
+  "verticalDivider",
+  "header",
+  "footer",
+  "titlebar",
+  "content",
+  "keystone",
+  "grid",
+  "icon",
 	//page
 	"modules",
 	"theme";
@@ -36,27 +43,8 @@
 	}
 }
 
-#area {
-	background-color: tomato;
-	height: $area-height;
-	> header {
-		h2 {
-
-		}
-		height: $area-header-height;
-		background-color: $brand-color;
-
-		font-weight: 500;
-	}
-}
-
 #process {
 	background-color: forestgreen;
 	height: $process-height;
-}
-
-#detail {
-	background-color: palevioletred;
-	height: $detail-height;
 }
 

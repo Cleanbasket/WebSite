@@ -1,0 +1,36 @@
+$process-grid-gutter: 58px;
+
+.content {
+  padding-top: 0;
+}
+
+.area {
+  .vertical-divider {
+    font-size: 35px;
+    font-weight: $font-thin;
+    vertical-align: middle;
+    color: #8ee6e6;
+    margin: 0 17px;
+  }
+
+  .btn {
+    font-size: 16px;
+    font-weight: $font-bold;
+    border: none;
+    height: 54px;
+    padding: 10px 0;
+  }
+  .btn-filled {
+    background-color: #57bebc;
+  }
+}
+
+.process {
+  .row {
+    margin: 0 -$process-grid-gutter/2;
+  }
+
+  .col-1-of-3 {
+    padding: $process-grid-gutter/2;
+  }
+}
