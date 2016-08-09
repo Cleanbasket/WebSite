@@ -431,7 +431,8 @@ html {
 .container {
   position: relative;
   width: 1280px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 .container-fluid {
   width: auto;
@@ -448,7 +449,7 @@ html {
   float: right; }
 
 .btn {
-  color: black;
+  color: #5ddbdb;
   background-color: white;
   padding: 12px 24px;
   border: 1px solid white;
@@ -555,7 +556,10 @@ html {
 .titlebar {
   background-color: tomato;
   text-align: center;
-  height: 330px; }
+  height: 330px;
+  min-width: 1280px;
+  max-width: 1920px;
+  margin: 0 auto; }
   .titlebar.titlebar-tabs h1 {
     padding-top: 72px; }
   .titlebar.titlebar-tabs .tabs {
@@ -661,7 +665,7 @@ html {
   margin-top: 171px; }
   .business-titlebar {
     height: 405px;
-    background: url("/WebSite/image/sub03_sub_title.png") no-repeat 0 0; }
+    background: url("/image/sub03_sub_title.png") no-repeat 0 0; }
   .business-title {
     margin: 0;
     padding-top: 167px;
@@ -726,7 +730,7 @@ mark {
   color: #72cbcf; }
 
 .titlebar {
-  background: url("/WebSite/image/sub03_title_image.png") no-repeat center center;
+  background: url("/image/sub03_title_image.png") no-repeat center center;
   background-size: cover; }
 
 .about .row {
