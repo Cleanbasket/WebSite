@@ -5,6 +5,11 @@ mark {
   color: $brand-color;
 }
 
+.titlebar {
+  background: url("#{$rootPath}/image/sub04_title_image.png") no-repeat center center; 
+  background-size: cover;
+}
+
 .environment {
   .keystone {
     top: 93px;

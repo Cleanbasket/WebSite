@@ -10,13 +10,15 @@
   &-title {
     font-size: 70px;
     line-height: 1.1em;
+    letter-spacing: -0.065em;
 
     padding-top: 35px;
   }
 
   &-subtitle {
     font-size: 22px;
-    font-weight: normal;
+    font-weight: $font-regular;
+    letter-spacing: -0.065em;
 
     padding-top: 14px;
   }
@@ -26,20 +28,28 @@
   }
 
   &-bar {
+    margin : 4px;
+    margin-left:  22px;
+    
     border: 3px solid $dark-brand-color;
     width : 60px;
-    margin : 4px;
   }
 
   &-subject {
-    font-weight: lighter;
+    margin-left: 20px;
+
+    font-weight: $font-thin;
     font-size: 40px;
+    letter-spacing: -0.085em;
   }
 
   &-text {
-    font-weight: 300;
+    margin-left: 20px;
+
+    font-weight: $font-regular;
     font-size: 18px;
     line-height: 1.45em;
+    letter-spacing: -0.07em;
   }
 }
 
@@ -48,15 +58,17 @@
   margin-top: 171px;
   &-titlebar {
     height: 405px;
-    background-color: tomato;
+    background: url("#{$rootPath}/image/sub03_sub_title.png") no-repeat 0 0;
   }
   &-title {
     margin: 0;
     padding-top: 167px;
     text-align: center;
     font-size: 60px;
-    font-weight: lighter;
+    font-weight: 100;
+    letter-spacing: -0.1em;
 
+    color: white;
   }
 
   &-detail {
@@ -106,6 +118,8 @@
     padding-top: 142px;
     margin-bottom: 50px;
     font-size: 35px;
+    font-weight: $font-regular;
+    letter-spacing: -0.095em;
     line-height: 1.35em;
 
   }
@@ -117,8 +131,8 @@
     margin-bottom: 30px;
     color: #aaabab;
     font-size: 18px;
-
-    // font-weight: 500;
+    letter-spacing: -0.09em;
+    font-weight: $font-regular;
   }
 
   .btn-border {
