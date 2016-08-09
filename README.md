@@ -39,3 +39,38 @@ npm과 bower의 dependency를 설치합니다.
 ### common 
 
 페이지마다 공통적으로 쓰이는 코드들이 들어있습니다.
+
+## Deploy
+
+### gh-pages Deploy방법
+
+1. master를 dev와 merge합니다.
+
+``` bash
+git checkout master
+git merge dev
+```
+
+2. gh-pages용으로 코드를 빌드합니다
+
+``` bash
+gulp build-ghPages
+```
+
+빌드된것을 추가하고 커밋합니다
+
+``` bash
+git add -f build/
+git commit -m "gh-pages"
+```
+
+gh-pages에 build를 디플로이합니다. subtree 방식을 사용합니다.
+
+``` bash
+git subtree push --prefix build/ origin gh-pages
+```
+
+그리고 잊지않고 마스터를 푸시해줍니다.
+
+이러면 build폴더를 그대로 gh-pages에 이동시켜서 https://cleanbasket.github.io/WebSite/파일경로 로 이용가능합니다 :)
+

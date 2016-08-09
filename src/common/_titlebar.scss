@@ -17,6 +17,7 @@ $titlebar-btn-height: 60px;
   &.titlebar-tabs {
     h1 {
       padding-top : $titlebar-withtabs-space-title;
+
     }
 
     // p {
@@ -32,10 +33,13 @@ $titlebar-btn-height: 60px;
     margin: 0;
     padding-top : $titlebar-space-title;
     font-size : 60px;
-    font-weight : 500;
+    font-weight : $font-bold;
+    letter-spacing: -0.065em;
   }
   p {
     font-size: 20px;
+    font-weight: $font-regular;
+    letter-spacing: -0.08em;
     margin-top: $titlebar-space-sub;
   }
 

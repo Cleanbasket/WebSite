@@ -3,6 +3,12 @@ mark {
   color: $dark-brand-color;
 }
 
+.titlebar {
+  background: url("#{$rootPath}/image/sub03_title_image.png") no-repeat center center; 
+  background-size: cover;
+}
+
+
 .about {
   .row {
     margin: 0 -$about-grid-gutter/2;

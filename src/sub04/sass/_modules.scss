@@ -28,7 +28,9 @@
 
 .duty {
   height: 653px;
-  background-color: lightslategray;
+  // background-color: lightslategray;
+  background: url("#{$rootPath}/image/sub04_sub_title.png") center center; 
+  background-size: cover;  
   &-detail {
     padding-top: 210px;
     // padding-left: 50px;
@@ -69,7 +71,11 @@
   }
   &-item {
     text-align: center;
+    img {
+      width: 170px;
+    }
     h3 {
+      padding-top: 30px;
       margin: 7px 0;
 
       font-size: 28px;
@@ -100,7 +106,9 @@
 }
 
 .qualifi {
-  background-color: #5fa9ac;
+  // background-color: #5fa9ac;
+  background: url("#{$rootPath}/image/ic_foot.png") no-repeat center center; 
+  background-size: cover;
   text-align: center;
 
   ul {
