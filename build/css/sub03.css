@@ -564,9 +564,12 @@ html {
     margin: 0;
     padding-top: 98px;
     font-size: 60px;
-    font-weight: 500; }
+    font-weight: 500;
+    letter-spacing: -0.065em; }
   .titlebar p {
     font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -0.08em;
     margin-top: 2px; }
   .titlebar .btn {
     margin: 0 5px;
@@ -627,37 +630,46 @@ html {
   .about-title {
     font-size: 70px;
     line-height: 1.1em;
+    letter-spacing: -0.065em;
     padding-top: 35px; }
   .about-subtitle {
     font-size: 22px;
-    font-weight: normal;
+    font-weight: 300;
+    letter-spacing: -0.065em;
     padding-top: 14px; }
   .about-detail {
     margin-top: 115px; }
   .about-bar {
+    margin: 4px;
+    margin-left: 22px;
     border: 3px solid #72cbcf;
-    width: 60px;
-    margin: 4px; }
+    width: 60px; }
   .about-subject {
-    font-weight: lighter;
-    font-size: 40px; }
+    margin-left: 20px;
+    font-weight: 200;
+    font-size: 40px;
+    letter-spacing: -0.085em; }
   .about-text {
+    margin-left: 20px;
     font-weight: 300;
     font-size: 18px;
-    line-height: 1.45em; }
+    line-height: 1.45em;
+    letter-spacing: -0.07em; }
 
 .business {
   position: relative;
   margin-top: 171px; }
   .business-titlebar {
     height: 405px;
-    background-color: tomato; }
+    background: url("/WebSite/image/sub03_sub_title.png") no-repeat 0 0; }
   .business-title {
     margin: 0;
     padding-top: 167px;
     text-align: center;
     font-size: 60px;
-    font-weight: lighter; }
+    font-weight: 100;
+    letter-spacing: -0.1em;
+    color: white; }
   .business-detail {
     padding-top: 55px;
     padding-bottom: 98px; }
@@ -692,13 +704,17 @@ html {
     padding-top: 142px;
     margin-bottom: 50px;
     font-size: 35px;
+    font-weight: 300;
+    letter-spacing: -0.095em;
     line-height: 1.35em; }
   .company-down {
     margin: 0;
     margin-top: 50px;
     margin-bottom: 30px;
     color: #aaabab;
-    font-size: 18px; }
+    font-size: 18px;
+    letter-spacing: -0.09em;
+    font-weight: 300; }
   .company .btn-border {
     color: #72cbcf;
     width: 178px;
@@ -709,8 +725,12 @@ mark {
   background-color: transparent;
   color: #72cbcf; }
 
+.titlebar {
+  background: url("/WebSite/image/sub03_title_image.png") no-repeat center center;
+  background-size: cover; }
+
 .about .row {
-  margin: -75px; }
+  margin: -55px; }
 
 .about .col-1-of-3 {
-  padding: 75px; }
+  padding: 55px; }

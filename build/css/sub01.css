@@ -557,9 +557,12 @@ html {
     margin: 0;
     padding-top: 98px;
     font-size: 60px;
-    font-weight: 500; }
+    font-weight: 500;
+    letter-spacing: -0.065em; }
   .titlebar p {
     font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -0.08em;
     margin-top: 2px; }
   .titlebar .btn {
     margin: 0 5px;
@@ -571,3 +574,7 @@ html {
   max-width: 1920px;
   padding-top: 50px;
   margin: 0 auto; }
+
+.titlebar {
+  background: url("/WebSite/image/sub01_title_image.png") no-repeat center center;
+  background-size: cover; }

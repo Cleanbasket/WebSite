@@ -564,9 +564,12 @@ html {
     margin: 0;
     padding-top: 98px;
     font-size: 60px;
-    font-weight: 500; }
+    font-weight: 500;
+    letter-spacing: -0.065em; }
   .titlebar p {
     font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -0.08em;
     margin-top: 2px; }
   .titlebar .btn {
     margin: 0 5px;
@@ -621,6 +624,10 @@ mark {
   background-color: transparent;
   color: #5ddbdb; }
 
+.titlebar {
+  background: url("/WebSite/image/sub04_title_image.png") no-repeat center center;
+  background-size: cover; }
+
 .environment .keystone {
   top: 93px;
   width: 104px;
@@ -672,7 +679,8 @@ mark {
 
 .duty {
   height: 653px;
-  background-color: lightslategray; }
+  background: url("/WebSite/image/sub04_sub_title.png") center center;
+  background-size: cover; }
   .duty-detail {
     padding-top: 210px;
     width: 50%;
@@ -702,7 +710,10 @@ mark {
     padding-top: 230px; }
   .environment-item {
     text-align: center; }
+    .environment-item img {
+      width: 170px; }
     .environment-item h3 {
+      padding-top: 30px;
       margin: 7px 0;
       font-size: 28px;
       font-weight: 500;
@@ -722,7 +733,8 @@ mark {
     padding-top: 145px; }
 
 .qualifi {
-  background-color: #5fa9ac;
+  background: url("/WebSite/image/ic_foot.png") no-repeat center center;
+  background-size: cover;
   text-align: center; }
   .qualifi ul {
     margin: 0;
