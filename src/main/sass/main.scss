@@ -26,23 +26,6 @@
 	"modules",
 	"theme";
 
-// @import 
-// 	"./variables",
-// 	"./base",
-// 	"./modules",
-// 	"./theme";
-
-/* ======================================================
- * Layout 
- * ====================================================== */
-
-#hero {
-	background-color: teal;
-	li {
-		display: none;
-	}
-}
-
 #process {
 	background-color: forestgreen;
 	height: $process-height;

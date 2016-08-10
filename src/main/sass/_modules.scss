@@ -1,4 +1,12 @@
 #hero {
+  .slide-one {
+    background: url("#{$rootPath}/image/bg_1.png") no-repeat center center;
+  }
+
+  .slide-two {
+    background: url("#{$rootPath}/image/bg_2.png") no-repeat center center; 
+  }
+
   .swiper-container {
     height: 100%;
   }
@@ -36,16 +44,7 @@
   .swiper-pagination-custom, 
   .swiper-pagination-fraction {
     bottom: 60px; 
-  }
-
-  .slide-one {
-    background: url("#{$rootPath}/image/bg_1.png") no-repeat center center;
-  }
-
-  .slide-two {
-    background: url("#{$rootPath}/image/bg_2.png") no-repeat center center; 
-  }
- 
+  } 
 }
 
 .area {
@@ -302,23 +301,21 @@
   .badges {
     padding-top: 20px;
   }
+
   .badge-iphone {
-    display: inline-block;
-    width: 270px;
-    height: 80px;
-    margin: 20px;
-    margin-right: 0;
-    // overflow:hidden;
-    background: url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;
-    background-size: contain;
+    background: url("#{$rootPath}/image/icon_iphone.png") no-repeat;
   }
 
   .badge-android {
+    background: url("#{$rootPath}/image/icon_android.png") no-repeat;
+    
+  }
+  .badge-iphone, 
+  .badge-android {
     display: inline-block;
-    width: 310px;
-    height: 120px;
-
-    background: url(https://play.google.com/intl/en_us/badges/images/generic/ko_badge_web_generic.png) no-repeat;
+    width: 270px;
+    height: 80px;
+    margin: 5px;
     background-size: contain;
   }
 }

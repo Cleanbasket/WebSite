@@ -7,11 +7,13 @@
     width: 29px;
     background: url("#{$rootPath}/image/icon_gps.png") no-repeat 0 0;
   }
+
   &-map {
     height: 23px;
     width: 23px;
     background: url("#{$rootPath}/image/icon_map.png") no-repeat 0 0;
   }
+
   &-q {
     height: 40px;
     width: 40px;
@@ -34,5 +36,11 @@
     height: 13px;
     width: 23px;
     background: url("#{$rootPath}/image/icon_arrow_down.png") no-repeat 0 0;
+  }
+
+  &-go {
+    height: 27px;
+    width: 27px;
+    background: url("#{$rootPath}/image/icon_go.png") no-repeat 0 0;
   }
 }
