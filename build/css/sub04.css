@@ -400,24 +400,6 @@ optgroup {
 textarea {
   overflow: auto; }
 
-/**
- * header
- */
-/**
- * nav
- */
-/**
- * title
- */
-/**
- * footer
- */
-/**
- * container
- */
-/**
- * btn
- */
 html {
   font-family: 'Noto Sans KR', sans-serif; }
 
@@ -469,8 +451,10 @@ html {
     background-color: rgba(255, 255, 255, 0.8);
     border: none; }
 
-.vertical-divider:before {
-  content: "|"; }
+.vertical-divider {
+  display: inline-block; }
+  .vertical-divider:before {
+    content: "|"; }
 
 /*
  * needs
@@ -478,24 +462,6 @@ html {
  *  header-min-width;
  *  header-max-width;
  *  header-v-padding
- */
-/**
- * header
- */
-/**
- * nav
- */
-/**
- * title
- */
-/**
- * footer
- */
-/**
- * container
- */
-/**
- * btn
  */
 .header {
   min-width: 1280px;
@@ -510,24 +476,6 @@ html {
   height: 95px;
   line-height: 95px; }
 
-/**
- * header
- */
-/**
- * nav
- */
-/**
- * title
- */
-/**
- * footer
- */
-/**
- * container
- */
-/**
- * btn
- */
 .footer {
   position: relative;
   height: 137px; }

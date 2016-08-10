@@ -400,24 +400,6 @@ optgroup {
 textarea {
   overflow: auto; }
 
-/**
- * header
- */
-/**
- * nav
- */
-/**
- * title
- */
-/**
- * footer
- */
-/**
- * container
- */
-/**
- * btn
- */
 html {
   font-family: 'Noto Sans KR', sans-serif; }
 
@@ -462,8 +444,10 @@ html {
     background-color: rgba(255, 255, 255, 0.8);
     border: none; }
 
-.vertical-divider:before {
-  content: "|"; }
+.vertical-divider {
+  display: inline-block; }
+  .vertical-divider:before {
+    content: "|"; }
 
 /*
  * needs
@@ -471,24 +455,6 @@ html {
  *  header-min-width;
  *  header-max-width;
  *  header-v-padding
- */
-/**
- * header
- */
-/**
- * nav
- */
-/**
- * title
- */
-/**
- * footer
- */
-/**
- * container
- */
-/**
- * btn
  */
 .header {
   min-width: 1280px;
@@ -503,24 +469,6 @@ html {
   height: 95px;
   line-height: 95px; }
 
-/**
- * header
- */
-/**
- * nav
- */
-/**
- * title
- */
-/**
- * footer
- */
-/**
- * container
- */
-/**
- * btn
- */
 .footer {
   position: relative;
   height: 137px; }
@@ -579,6 +527,88 @@ html {
   padding-top: 50px;
   margin: 0 auto; }
 
+.row {
+  margin: 0;
+  padding: 0;
+  margin: 0 -11px; }
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col-1-of-3 {
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 33.33%;
+  padding: 11px;
+  min-height: 1px; }
+
 .titlebar {
   background: url("/WebSite/image/sub01_title_image.png") no-repeat center center;
   background-size: cover; }
+
+.post-header {
+  vertical-align: middle; }
+  .post-header .vertical-divider {
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: 100;
+    color: #ccc;
+    margin: 0 10px; }
+  .post-header .tag {
+    color: #333;
+    vertical-align: middle;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -0.07em;
+    text-decoration: none; }
+    .post-header .tag.active {
+      color: #5ddbdb;
+      border-bottom: 1px solid #5ddbdb;
+      padding-bottom: 2px; }
+
+.post-title {
+  vertical-align: middle;
+  margin: 0;
+  font-size: 26px;
+  font-weight: 300;
+  display: inline-block; }
+
+.post-list {
+  list-style: none;
+  padding-top: 24px; }
+  .post-list .card {
+    background-color: #fafafa;
+    height: 364px; }
+    .post-list .card-image {
+      width: 100%;
+      height: 200px;
+      background-position: center center;
+      background-size: cover; }
+    .post-list .card-meta {
+      padding-top: 22px; }
+    .post-list .card-date {
+      margin-left: 20px;
+      font-size: 14px;
+      font-weight: 400;
+      color: grey; }
+    .post-list .card-title {
+      margin: 0;
+      padding-top: 10px;
+      margin-left: 20px;
+      font-size: 22px;
+      font-weight: 300; }
+
+.post-footer {
+  text-align: center;
+  padding-top: 42px;
+  margin-bottom: 80px; }
+  .post-footer .btn {
+    font-size: 20px;
+    font-weight: 500;
+    width: 268px;
+    height: 60px; }

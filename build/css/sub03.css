@@ -400,24 +400,6 @@ optgroup {
 textarea {
   overflow: auto; }
 
-/**
- * header
- */
-/**
- * nav
- */
-/**
- * title
- */
-/**
- * footer
- */
-/**
- * container
- */
-/**
- * btn
- */
 html {
   font-family: 'Noto Sans KR', sans-serif; }
 
@@ -469,8 +451,10 @@ html {
     background-color: rgba(255, 255, 255, 0.8);
     border: none; }
 
-.vertical-divider:before {
-  content: "|"; }
+.vertical-divider {
+  display: inline-block; }
+  .vertical-divider:before {
+    content: "|"; }
 
 /*
  * needs
@@ -478,24 +462,6 @@ html {
  *  header-min-width;
  *  header-max-width;
  *  header-v-padding
- */
-/**
- * header
- */
-/**
- * nav
- */
-/**
- * title
- */
-/**
- * footer
- */
-/**
- * container
- */
-/**
- * btn
  */
 .header {
   min-width: 1280px;
@@ -510,24 +476,6 @@ html {
   height: 95px;
   line-height: 95px; }
 
-/**
- * header
- */
-/**
- * nav
- */
-/**
- * title
- */
-/**
- * footer
- */
-/**
- * container
- */
-/**
- * btn
- */
 .footer {
   position: relative;
   height: 137px; }
@@ -624,6 +572,38 @@ html {
   padding: 11px;
   min-height: 1px; }
 
+.icon {
+  overflow: hidden;
+  display: inline-block; }
+  .icon-gps {
+    height: 29px;
+    width: 29px;
+    background: url("/WebSite/image/icon_gps.png") no-repeat 0 0; }
+  .icon-map {
+    height: 23px;
+    width: 23px;
+    background: url("/WebSite/image/icon_map.png") no-repeat 0 0; }
+  .icon-q {
+    height: 40px;
+    width: 40px;
+    background: url("/WebSite/image/icon_q.png") no-repeat 0 0; }
+  .icon-a {
+    height: 40px;
+    width: 40px;
+    background: url("/WebSite/image/icon_a.png") no-repeat 0 0; }
+  .icon-arrow-up {
+    height: 13px;
+    width: 23px;
+    background: url("/WebSite/image/icon_arrow_up.png") no-repeat 0 0; }
+  .icon-arrow-down {
+    height: 13px;
+    width: 23px;
+    background: url("/WebSite/image/icon_arrow_down.png") no-repeat 0 0; }
+  .icon-go {
+    height: 27px;
+    width: 27px;
+    background: url("/WebSite/image/icon_go.png") no-repeat 0 0; }
+
 .about {
   position: relative; }
   .about-titlebar {
@@ -659,6 +639,33 @@ html {
     font-size: 18px;
     line-height: 1.45em;
     letter-spacing: -0.07em; }
+  .about-apply {
+    position: absolute;
+    top: -50px;
+    right: 70px;
+    color: white;
+    width: 165px;
+    height: 286px;
+    background: url("/WebSite/image/apply.png") no-repeat;
+    background-size: cover; }
+    .about-apply p {
+      font-size: 23px;
+      font-weight: 500;
+      line-height: 1.1em;
+      letter-spacing: -0.07em;
+      margin: 30px 15px; }
+    .about-apply a {
+      position: absolute;
+      bottom: 0;
+      margin: 20px 15px;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      color: white;
+      vertical-align: middle; }
+      .about-apply a > span {
+        vertical-align: middle;
+        margin-right: 10px; }
 
 .business {
   position: relative;
