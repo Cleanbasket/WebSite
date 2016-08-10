@@ -23,9 +23,6 @@ function init() {
   })
 }
 
-function swiperInit () {
-
-}
 function fitHero () {
   var headerHeight = 95;
   var windowHeight = $(window).height();

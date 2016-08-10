@@ -51,6 +51,40 @@
     line-height: 1.45em;
     letter-spacing: -0.07em;
   }
+
+  &-apply {
+    position: absolute;
+    top: -50px;;
+    right: 70px;
+    color: white;
+    width: 165px;
+    height: 286px;
+    background: url("#{$rootPath}/image/apply.png") no-repeat;
+    background-size: cover;
+    p {
+      font-size: 23px;
+      font-weight: $font-bold;
+      line-height: 1.1em;
+      letter-spacing: -0.07em;
+      margin: 30px 15px;
+    }
+
+    a {
+      position: absolute;
+      bottom: 0;
+      margin: 20px 15px;
+      font-size: 16px;
+      font-weight: $font-bold;
+      text-decoration: none;
+      color: white;
+      
+      vertical-align: middle;
+      > span {
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+  }
 }
 
 .business {
