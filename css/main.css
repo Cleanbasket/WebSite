@@ -399,24 +399,6 @@ optgroup {
 textarea {
   overflow: auto; }
 
-/**
- * header
- */
-/**
- * nav
- */
-/**
- * title
- */
-/**
- * footer
- */
-/**
- * container
- */
-/**
- * btn
- */
 html {
   font-family: 'Noto Sans KR', sans-serif; }
 
@@ -468,8 +450,10 @@ html {
     background-color: rgba(255, 255, 255, 0.8);
     border: none; }
 
-.vertical-divider:before {
-  content: "|"; }
+.vertical-divider {
+  display: inline-block; }
+  .vertical-divider:before {
+    content: "|"; }
 
 /*
  * needs
@@ -477,24 +461,6 @@ html {
  *  header-min-width;
  *  header-max-width;
  *  header-v-padding
- */
-/**
- * header
- */
-/**
- * nav
- */
-/**
- * title
- */
-/**
- * footer
- */
-/**
- * container
- */
-/**
- * btn
  */
 .header {
   min-width: 1280px;
@@ -509,24 +475,6 @@ html {
   height: 95px;
   line-height: 95px; }
 
-/**
- * header
- */
-/**
- * nav
- */
-/**
- * title
- */
-/**
- * footer
- */
-/**
- * container
- */
-/**
- * btn
- */
 .footer {
   position: relative;
   height: 137px; }
@@ -650,6 +598,16 @@ html {
     height: 13px;
     width: 23px;
     background: url("/WebSite/image/icon_arrow_down.png") no-repeat 0 0; }
+  .icon-go {
+    height: 27px;
+    width: 27px;
+    background: url("/WebSite/image/icon_go.png") no-repeat 0 0; }
+
+#hero .slide-one {
+  background: url("/WebSite/image/bg_1.png") no-repeat center center; }
+
+#hero .slide-two {
+  background: url("/WebSite/image/bg_2.png") no-repeat center center; }
 
 #hero .swiper-container {
   height: 100%; }
@@ -683,12 +641,6 @@ html {
 #hero .swiper-pagination-custom,
 #hero .swiper-pagination-fraction {
   bottom: 60px; }
-
-#hero .slide-one {
-  background: url("/WebSite/image/bg_1.png") no-repeat center center; }
-
-#hero .slide-two {
-  background: url("/WebSite/image/bg_2.png") no-repeat center center; }
 
 .area {
   color: white;
@@ -864,18 +816,15 @@ html {
   .appinfo .badges {
     padding-top: 20px; }
   .appinfo .badge-iphone {
+    background: url("/WebSite/image/icon_iphone.png") no-repeat; }
+  .appinfo .badge-android {
+    background: url("/WebSite/image/icon_android.png") no-repeat; }
+  .appinfo .badge-iphone,
+  .appinfo .badge-android {
     display: inline-block;
     width: 270px;
     height: 80px;
-    margin: 20px;
-    margin-right: 0;
-    background: url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;
-    background-size: contain; }
-  .appinfo .badge-android {
-    display: inline-block;
-    width: 310px;
-    height: 120px;
-    background: url(https://play.google.com/intl/en_us/badges/images/generic/ko_badge_web_generic.png) no-repeat;
+    margin: 5px;
     background-size: contain; }
 
 .content {
@@ -903,14 +852,6 @@ html {
 
 .process .col-1-of-3 {
   padding: 29px; }
-
-/* ======================================================
- * Layout 
- * ====================================================== */
-#hero {
-  background-color: teal; }
-  #hero li {
-    display: none; }
 
 #process {
   background-color: forestgreen;
