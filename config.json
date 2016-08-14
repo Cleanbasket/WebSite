@@ -10,6 +10,7 @@
 			"sub01": {
 				"html": "sub01/sub01.html",
 				"sass": "sub01/sass/sub01.scss",
+				"js": "sub01/js/sub01.js",
 				"dest": ""
 			},
 			"sub02": {
@@ -21,16 +22,19 @@
 			"sub02-1": {
 				"html": "sub02-1/sub02-1.html",
 				"sass": "sub02-1/sass/sub02-1.scss",
+				"js": "sub02-1/js/sub02-1.js",
 				"dest": ""
 			},
 			"sub03": {
 				"html": "sub03/sub03.html",
 				"sass": "sub03/sass/sub03.scss",
+				"js": "sub03/js/sub03.js",
 				"dest": ""
 			},
 			"sub04": {
 				"html": "sub04/sub04.html",
 				"sass": "sub04/sass/sub04.scss",
+				"js": "sub04/js/sub04.js",
 				"dest": ""
 			}
 		},
