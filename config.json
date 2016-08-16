@@ -13,6 +13,12 @@
 				"js": "sub01/js/sub01.js",
 				"dest": ""
 			},
+			"sub01-1": {
+				"html": "sub01-1/sub01-1.html",
+				"sass": "sub01-1/sass/sub01-1.scss",
+				"js": "sub01-1/js/sub01-1.js",
+				"dest": ""
+			},
 			"sub02": {
 				"html": "sub02/sub02.html",
 				"sass": "sub02/sass/sub02.scss",

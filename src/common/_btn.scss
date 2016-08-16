@@ -2,10 +2,13 @@
   color: $brand-color;
   background-color: white;
   padding: $btn-v-padding $btn-h-padding;
-  border: $btn-border-size solid white;
+  border: 1px solid #ccc;
+  // border: $btn-border-size solid white;
   border-radius: $btn-border-radius;
   line-height: 100%;
   font-size: 18px;
+  color: black;
+
   &-filled {
     color: white;
     background-color: $brand-color;
