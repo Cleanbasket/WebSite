@@ -36,7 +36,78 @@
     </div>
     <div class="content">
       <div class="container">
-        
+        <div class="ask">
+          <form action="">
+            <section class="section">
+              <header class="section-header">
+                <h2 class="section-title">문의정보</h2>
+              </header>
+              <table>
+                <tr>
+                  <td>문의종류</td>
+                  <td>
+                    <input type="radio" name="question-type" value="order">주문
+                    <input type="radio" name="question-type" value="wash">세탁
+                    <input type="radio" name="question-type" value="deliver">수집/배달
+                    <input type="radio" name="question-type" value="cash">결제
+                    <input type="radio" name="question-type" varle="partner">제휴문의
+                  </td>
+                </tr>
+                <tr>
+                  <td>제목</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td>내용</td>
+                  <td>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>첨부파일</td>
+                  <td>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                  </td>
+                </tr>
+              </table>
+            </section>
+            <section class="section">
+              <header class="section-header">
+                <h2 class="section-title">고객정보</h2>
+              </header>
+              <table>
+                <tr>
+                  <td>고객명</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td>휴대폰 번호</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td>이메일 주소</td>
+                  <td><input type="text"></td>
+                </tr>  
+                <tr>
+                  <td>답변받기</td>
+                  <td>
+                    <input type="radio" name="get-answer" value="email">
+                    이메일답변
+                    <input type="radio" name="get-answer" value="sms">
+                    SMS답변
+                  </td>
+                </tr>
+              </table>
+            </section>       
+            <div class="ask-btns">
+              <button class="btn btn-filled" type="submit">등록</button>
+              <a class="btn btn-default" href="{rootPath}/sub02.html">
+                취소
+              </a>
+            </div>
+          </form>
+        </div>
+
       </div>
     </div>
     <!-- footer -->

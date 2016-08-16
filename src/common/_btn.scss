@@ -1,4 +1,6 @@
 .btn {
+  display: inline-block;
+
   color: $brand-color;
   background-color: white;
   padding: $btn-v-padding $btn-h-padding;
@@ -7,7 +9,12 @@
   border-radius: $btn-border-radius;
   line-height: 100%;
   font-size: 18px;
-  color: black;
+  // color: black;
+  text-decoration: none;
+
+  &-default {
+    color: black;
+  }
 
   &-filled {
     color: white;
