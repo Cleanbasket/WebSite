@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="{{rootPath}}/css/sub02-1.css">
+</head>
+<body>
+  <div id="root">
+    {{> header }}
+    {{> titlebar-tabs 
+      title="문의하기"
+      subtitle="크린바스켓 서비스 이용에 관한 궁금증을 해결해 드립니다."
+      tableft="FAQ"
+      tableft-href="/sub02.html"
+      tabright="1:1문의"
+      tabright-href="/sub02-1.html"
+    }}
+    <div class="content">
+      <div class="container">
+        <div class="ask">
+          <form action="">
+            <section class="section">
+              <header class="section-header">
+                <h2 class="section-title">문의정보</h2>
+              </header>
+              <table class="table">
+                <tr>
+                  <td>문의종류</td>
+                  <td>
+                    <input type="radio" name="question-type" value="order">
+                    <span class="radio-text">주문</span>
+                    <input type="radio" name="question-type" value="wash">
+                    <span class="radio-text">세탁</span>
+                    <input type="radio" name="question-type" value="deliver">
+                    <span class="radio-text">수집/배달</span>
+                    <input type="radio" name="question-type" value="cash">
+                    <span class="radio-text">결제</span>
+                    <input type="radio" name="question-type" varle="partner">
+                    <span class="radio-text">제휴문의</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>제목</td>
+                  <td><input class="input-fluid" type="text" placeholder="제목을 입력해 주세요."></td>
+                </tr>
+                <tr>
+                  <td class='text-top'>내용</td>
+                  <td>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="상담내용을 입력해 주세요."></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>첨부파일</td>
+                  <td>
+                    <div class="filebox">
+                      <label for="add-file">파일추가</label>
+                      <input type="file" id="add-file" class='upload-hidden' multiple>
+                    </div>
+                    <span class='addfiletext'>파일당 <strong>최대 10M까지</strong> 등록할 수 있습니다.</span>
+                    <div class='filebox-list' data-filebox-id='add-file'></div>
+                  </td>
+                </tr>
+              </table>
+            </section>
+            <section class="section">
+              <header class="section-header">
+                <h2 class="section-title">고객정보</h2>
+              </header>
+              <table class='table'>
+                <tr>
+                  <td>고객명</td>
+                  <td><input type="text" placeholder="홍길동"></td>
+                </tr>
+                <tr>
+                  <td>휴대폰 번호</td>
+                  <td><input type="text" placeholder="-없이 입력해 주세요"></td>
+                </tr>
+                <tr>
+                  <td>이메일 주소</td>
+                  <td><input type="text" placeholder="example@gmail.com"></td>
+                </tr>  
+                <tr>
+                  <td>답변받기</td>
+                  <td>
+                    <input type="radio" name="get-answer" value="email">
+                    <span class="radio-text">이메일답변</span>
+                    <input type="radio" name="get-answer" value="sms">
+                    <span class="radio-text">SNS답변</span>
+                  </td>
+                </tr>
+              </table>
+            </section>       
+            <div class="ask-btns">
+              <button class="btn btn-filled" type="submit">등록</button>
+              <a class="btn btn-default" href="{{rootPath}}/sub02.html">
+                취소
+              </a>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+    {{> footer }}
+  </div>
+  <script src="{{rootPath}}/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="{{rootPath}}/js/filebox.js"></script>
+  <script src="{{rootPath}}/js/sub02-1.js"></script>
+</body>
+</html>

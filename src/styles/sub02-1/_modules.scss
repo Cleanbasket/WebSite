@@ -1,0 +1,17 @@
+.ask {
+  &-btns {
+    .btn-default {
+
+    }
+  }
+  .table {
+    strong {
+      font-weight: $font-regular;
+      color: #9be7e7;
+      // text-decoration: underline;
+    }
+  }
+  .addfiletext {
+    margin-left: 10px;
+  }
+}
