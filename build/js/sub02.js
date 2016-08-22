@@ -1,6 +1,14 @@
 $(document).ready(function () {
-  expandableInit();
+  init();
 })
+
+function init() {
+  expandableInit();
+  $('.alert-notyetopen').click(function (e) {
+    e.preventDefault();
+    alert('서비스 준비중입니다. 빠른 시일내로 찾아뵙겠습니다.');
+  }) 
+}
 
 function expandableInit() {
   $('.expandable-item').map(function (index, item) {

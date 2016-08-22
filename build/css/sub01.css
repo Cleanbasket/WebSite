@@ -424,13 +424,19 @@ html {
   float: right; }
 
 .btn {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
   color: #5ddbdb;
   background-color: white;
   padding: 12px 24px;
-  border: 1px solid white;
+  border: 1px solid #ccc;
   border-radius: 3px;
   line-height: 100%;
-  font-size: 18px; }
+  font-size: 18px;
+  text-decoration: none; }
+  .btn-default {
+    color: black; }
   .btn-filled {
     color: white;
     background-color: #5ddbdb;
@@ -518,8 +524,8 @@ html {
     margin-top: 2px; }
   .titlebar .btn {
     margin: 0 5px;
-    width: 240px;
-    height: 60px; }
+    width: 192px;
+    line-height: 36px; }
 
 .content {
   min-width: 1280px;
@@ -549,6 +555,10 @@ html {
 .titlebar {
   background: url("/WebSite/image/sub01_title_image.png") no-repeat center center;
   background-size: cover; }
+
+.post a {
+  text-decoration: none;
+  color: black; }
 
 .post-header {
   vertical-align: middle; }
@@ -611,4 +621,4 @@ html {
     font-size: 20px;
     font-weight: 500;
     width: 268px;
-    height: 60px; }
+    line-height: 36px; }

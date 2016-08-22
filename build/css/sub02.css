@@ -424,13 +424,19 @@ html {
   float: right; }
 
 .btn {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
   color: #5ddbdb;
   background-color: white;
   padding: 12px 24px;
-  border: 1px solid white;
+  border: 1px solid #ccc;
   border-radius: 3px;
   line-height: 100%;
-  font-size: 18px; }
+  font-size: 18px;
+  text-decoration: none; }
+  .btn-default {
+    color: black; }
   .btn-filled {
     color: white;
     background-color: #5ddbdb;
@@ -518,8 +524,8 @@ html {
     margin-top: 2px; }
   .titlebar .btn {
     margin: 0 5px;
-    width: 240px;
-    height: 60px; }
+    width: 192px;
+    line-height: 36px; }
 
 .content {
   min-width: 1280px;
@@ -536,6 +542,13 @@ html {
     font-size: 30px;
     margin: 0;
     font-weight: normal; }
+  .section-meta {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #898989;
+    font-size: 16px;
+    font-weight: 300; }
 
 .expandable {
   margin: 0;
@@ -600,10 +613,26 @@ html {
     height: 13px;
     width: 23px;
     background: url("/WebSite/image/icon_arrow_down.png") no-repeat 0 0; }
+  .icon-prev-small {
+    height: 20px;
+    width: 11px;
+    background: url("/WebSite/image/icon_arrow_left_small_grey.png") no-repeat 0 0; }
+  .icon-next-small {
+    height: 20px;
+    width: 11px;
+    background: url("/WebSite/image/icon_arrow_right_small_grey.png") no-repeat 0 0; }
   .icon-go {
     height: 27px;
     width: 27px;
     background: url("/WebSite/image/icon_go.png") no-repeat 0 0; }
+  .icon-facebook-grey {
+    height: 17px;
+    width: 9px;
+    background: url("/WebSite/image/icon_facebook_grey.png") no-repeat 0 0; }
+  .icon-twitter-grey {
+    height: 18px;
+    width: 23px;
+    background: url("/WebSite/image/icon_twitter_grey.png") no-repeat 0 0; }
 
 .row {
   margin: 0;

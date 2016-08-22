@@ -2,12 +2,10 @@
 <html>
 <head>
   <title></title>
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
   <link rel="stylesheet" href="/WebSite/css/sub03.css">
 </head>
 <body>
   <div id="root">
-    <!-- header -->
     <header id="header" class='header'>
       <div class="container-fluid">
         <a class='header-logo' href="/WebSite/main.html">
@@ -18,8 +16,7 @@
           <a class='nav-link' href="/WebSite/sub01.html">크바연구소</a>
           <a class='nav-link' href="/WebSite/sub04.html">크린파트너</a>
           <a class='nav-link' href="/WebSite/sub02.html">문의하기</a>
-
-          <a class='notyet' href="#" onClick="alert('서비스 준비중입니다. 빠른 시일내로 찾아뵙겠습니다.')"><button class='btn btn-border'>주문하기</button></a>
+          <a class='alert-notyetopen btn btn-border' href="#">주문하기</a>
         </nav>    
       </div>
     </header>
@@ -81,7 +78,7 @@
             크린파트너를<br>
             모집합니다.
           </p>
-          <a href=""><span class='icon icon-go'></span>지원하기</a>
+          <a class='alert-apply' href="#"><span class='icon icon-go'></span>지원하기</a>
         </div> 
       </div>
       <div class="business">
@@ -124,10 +121,9 @@
         <p class="company-up">크린바스켓은 정기적으로 많은 양의 세탁을 필요로 하시는 <br>기업체나 사업자를 위해 B2B대량 세탁을 도와드리고 있습니다.</p>
         <img class='company-diagram' src="/WebSite/image/b2b_diagram.png">
         <p class="company-down">B2B 세탁 서비스는 위의 안내드린 세탁물 이외에도 다양하게 제공 가능합니다.<br>B2B 세탁에 관한 문의는 1833-8543으로 연락 주시거나 홈페이지를 통해 문의사항을 남겨주시면 연락드리겠습니다.</p>
-        <button class="btn btn-border">문의하기</button>
+        <a class="btn btn-border" href="/WebSite/sub02/ask.html">문의하기</a>
       </div>
     </div>
-    <!-- footer -->
     <footer id="footer" class='footer'>
       <div class="container-fluid">
         <p class='footer-info'>고객센터 1833-8543<span class="vertical-divider"></span>help@cleanbasket.co.kr</p>
@@ -136,5 +132,7 @@
       </div>
     </footer>
   </div>
+  <script src="/WebSite/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/WebSite/js/sub03.js"></script>
 </body>
 </html>
