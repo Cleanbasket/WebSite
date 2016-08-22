@@ -1,0 +1,24 @@
+$section-header-height: 60px;
+$section-title-fontsize: 30px;
+$section-margin-bottom: 45px;
+.section {
+  padding-bottom: $section-margin-bottom;
+  &-header {
+    height: $section-header-height;
+    border-bottom: solid 1px black;
+  }
+  &-title {
+    font-size: $section-title-fontsize;
+    margin: 0;
+    font-weight: normal;
+  }
+  &-meta {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #898989;
+
+    font-size: 16px;
+    font-weight: $font-regular;
+  }
+}

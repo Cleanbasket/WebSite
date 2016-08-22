@@ -1,0 +1,59 @@
+.filebox {
+  display: inline-block;
+  label {
+    cursor: pointer;
+
+    display: inline-block;
+    
+    color: black;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+  
+    padding: 6px 30px;
+    background-color: #e6e6e6;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="file"] {  /* 파일 필드 숨기기 */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+  }
+
+  &-list {
+    margin-top: 15px;
+  } 
+}
+
+.fileitem {
+  display: inline-block;
+  &-name {
+    color: black;
+    font-size: 16px;
+    font-weight: $font-regular;
+    margin-right: 20px;
+  }
+  &-size {
+    font-size: 12px;
+    color: #ccc;
+    font-weight: $font-regular;
+    margin-right: 10px;
+  }
+  &-delete {
+    display: inline-block;
+    // background-color: black;
+    // content: 'x';
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ccc;
+    margin-right: 30px;
+
+  }
+}

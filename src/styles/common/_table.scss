@@ -1,0 +1,47 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+
+  .text-top {
+    vertical-align: top;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: solid 1px #e6e6e6;  
+  }
+  tr {
+    td:nth-child(1) {
+      background-color: #fafafa;
+      width: 166px;
+    }  
+  }
+  input[type=radio] {
+    margin-right: 10px;
+  }
+
+  .radio-text {
+    margin-right: 30px
+  }
+
+  
+
+  input[type=text] {
+    padding: 5px 10px;
+    width: 300px;
+    box-sizing: border-box;
+    // line-height: 2.0em;
+  }
+
+  input[type=text].input-fluid {
+    width: 100%;
+  }
+
+  textarea {
+    resize: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
