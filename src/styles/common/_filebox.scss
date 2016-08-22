@@ -7,7 +7,7 @@
     
     color: black;
     font-size: inherit;
-    line-height: normal;
+    line-height: 27px;
     vertical-align: middle;
   
     padding: 6px 30px;
@@ -28,11 +28,12 @@
   }
 
   &-list {
-    margin-top: 15px;
+    
   } 
 }
 
 .fileitem {
+  margin-top: 15px;
   display: inline-block;
   &-name {
     color: black;
