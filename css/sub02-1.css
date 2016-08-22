@@ -660,12 +660,19 @@ html {
   .table .text-top {
     vertical-align: top; }
   .table th, .table td {
-    padding: 15px;
+    padding: 17px;
+    font-weight: 300;
     text-align: left;
+    font-size: 16px; }
+  .table tr {
     border-bottom: solid 1px #e6e6e6; }
-  .table tr td:nth-child(1) {
-    background-color: #fafafa;
-    width: 166px; }
+    .table tr:last-child {
+      border-bottom: solid 1px black; }
+    .table tr td:nth-child(1) {
+      padding: 21px;
+      background-color: #fafafa;
+      width: 166px;
+      font-size: 18px; }
   .table input[type=radio] {
     margin-right: 10px; }
   .table .radio-text {
@@ -689,7 +696,7 @@ html {
     display: inline-block;
     color: black;
     font-size: inherit;
-    line-height: normal;
+    line-height: 27px;
     vertical-align: middle;
     padding: 6px 30px;
     background-color: #e6e6e6;
@@ -705,10 +712,9 @@ html {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0; }
-  .filebox-list {
-    margin-top: 15px; }
 
 .fileitem {
+  margin-top: 15px;
   display: inline-block; }
   .fileitem-name {
     color: black;
@@ -727,12 +733,18 @@ html {
     border: 1px solid #ccc;
     margin-right: 30px; }
 
-.ask .table strong {
-  font-weight: 300;
-  color: #9be7e7; }
-
-.ask .addfiletext {
-  margin-left: 10px; }
+.ask {
+  letter-spacing: -0.075em; }
+  .ask-btns {
+    text-align: center; }
+    .ask-btns .btn {
+      padding: 20px 72px;
+      margin: 4px; }
+  .ask .table strong {
+    font-weight: 300;
+    color: #9be7e7; }
+  .ask .addfiletext {
+    margin-left: 10px; }
 
 .titlebar {
   background: url("/WebSite/image/sub02_title_image.png") no-repeat center center;
