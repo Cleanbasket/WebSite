@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="/WebSite/css/sub02-1.css">
+</head>
+<body>
+  <div id="root">
+    <header id="header" class='header'>
+      <div class="container-fluid">
+        <a class='header-logo' href="/WebSite/main.html">
+          <img src="/WebSite/image/top_logo.png">
+        </a>
+        <nav id="nav" class='nav'>
+          <a class='nav-link' href="/WebSite/sub03.html">소개</a>
+          <a class='nav-link' href="/WebSite/sub01.html">크바연구소</a>
+          <a class='nav-link' href="/WebSite/sub04.html">크린파트너</a>
+          <a class='nav-link' href="/WebSite/sub02.html">문의하기</a>
+          <a class='alert-notyetopen btn btn-border' href="#">주문하기</a>
+        </nav>    
+      </div>
+    </header>
+    <div class="titlebar titlebar-tabs">
+      <h1>문의하기</h1>
+      <p>크린바스켓 서비스 이용에 관한 궁금증을 해결해 드립니다.</p>
+      <div class="tabs">
+        <a href="/WebSite/sub02.html" class="btn btn-filled">FAQ</a>  
+        <a href="/WebSite/sub02-1.html" class="btn btn-transparent">1:1문의</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="ask">
+          <form action="">
+            <section class="section">
+              <header class="section-header">
+                <h2 class="section-title">문의정보</h2>
+              </header>
+              <table class="table">
+                <tr>
+                  <td>문의종류</td>
+                  <td>
+                    <input type="radio" name="question-type" value="order">
+                    <span class="radio-text">주문</span>
+                    <input type="radio" name="question-type" value="wash">
+                    <span class="radio-text">세탁</span>
+                    <input type="radio" name="question-type" value="deliver">
+                    <span class="radio-text">수집/배달</span>
+                    <input type="radio" name="question-type" value="cash">
+                    <span class="radio-text">결제</span>
+                    <input type="radio" name="question-type" varle="partner">
+                    <span class="radio-text">제휴문의</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>제목</td>
+                  <td><input class="input-fluid" type="text" placeholder="제목을 입력해 주세요."></td>
+                </tr>
+                <tr>
+                  <td class='text-top'>내용</td>
+                  <td>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="상담내용을 입력해 주세요."></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>첨부파일</td>
+                  <td>
+                    <div class="filebox">
+                      <label for="add-file">파일추가</label>
+                      <input type="file" id="add-file" class='upload-hidden' multiple>
+                    </div>
+                    <span class='addfiletext'>파일당 <strong>최대 10M까지</strong> 등록할 수 있습니다.</span>
+                    <div class='filebox-list' data-filebox-id='add-file'></div>
+                  </td>
+                </tr>
+              </table>
+            </section>
+            <section class="section">
+              <header class="section-header">
+                <h2 class="section-title">고객정보</h2>
+              </header>
+              <table class='table'>
+                <tr>
+                  <td>고객명</td>
+                  <td><input type="text" placeholder="홍길동"></td>
+                </tr>
+                <tr>
+                  <td>휴대폰 번호</td>
+                  <td><input type="text" placeholder="-없이 입력해 주세요"></td>
+                </tr>
+                <tr>
+                  <td>이메일 주소</td>
+                  <td><input type="text" placeholder="example@gmail.com"></td>
+                </tr>  
+                <tr>
+                  <td>답변받기</td>
+                  <td>
+                    <input type="radio" name="get-answer" value="email">
+                    <span class="radio-text">이메일답변</span>
+                    <input type="radio" name="get-answer" value="sms">
+                    <span class="radio-text">SNS답변</span>
+                  </td>
+                </tr>
+              </table>
+            </section>       
+            <div class="ask-btns">
+              <button class="btn btn-filled" type="submit">등록</button>
+              <a class="btn btn-default" href="/WebSite/sub02.html">
+                취소
+              </a>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+    <footer id="footer" class='footer'>
+      <div class="container-fluid">
+        <p class='footer-info'>고객센터 1833-8543<span class="vertical-divider"></span>help@cleanbasket.co.kr</p>
+        <p class='footer-info'>(주)워시앱코리아<span class="vertical-divider"></span>대표이사 김우진<span class="vertical-divider"></span>사업자번호 220-88-86968<span class="vertical-divider"></span>주소 서울 강남구 봉은사로16길 16 타비쉬빌딩 1층</p>
+        <p class='footer-info'>Copyright © <strong>Wash App Korea.</strong> All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="/WebSite/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/WebSite/js/filebox.js"></script>
+  <script src="/WebSite/js/sub02-1.js"></script>
+</body>
+</html>

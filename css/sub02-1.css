@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** 
  * Clean Basket
  * sub02-1
@@ -424,13 +425,19 @@ html {
   float: right; }
 
 .btn {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
   color: #5ddbdb;
   background-color: white;
   padding: 12px 24px;
-  border: 1px solid white;
+  border: 1px solid #ccc;
   border-radius: 3px;
   line-height: 100%;
-  font-size: 18px; }
+  font-size: 18px;
+  text-decoration: none; }
+  .btn-default {
+    color: black; }
   .btn-filled {
     color: white;
     background-color: #5ddbdb;
@@ -518,8 +525,8 @@ html {
     margin-top: 2px; }
   .titlebar .btn {
     margin: 0 5px;
-    width: 240px;
-    height: 60px; }
+    width: 192px;
+    line-height: 36px; }
 
 .content {
   min-width: 1280px;
@@ -536,6 +543,13 @@ html {
     font-size: 30px;
     margin: 0;
     font-weight: normal; }
+  .section-meta {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #898989;
+    font-size: 16px;
+    font-weight: 300; }
 
 .expandable {
   margin: 0;
@@ -600,10 +614,26 @@ html {
     height: 13px;
     width: 23px;
     background: url("/WebSite/image/icon_arrow_down.png") no-repeat 0 0; }
+  .icon-prev-small {
+    height: 20px;
+    width: 11px;
+    background: url("/WebSite/image/icon_arrow_left_small_grey.png") no-repeat 0 0; }
+  .icon-next-small {
+    height: 20px;
+    width: 11px;
+    background: url("/WebSite/image/icon_arrow_right_small_grey.png") no-repeat 0 0; }
   .icon-go {
     height: 27px;
     width: 27px;
     background: url("/WebSite/image/icon_go.png") no-repeat 0 0; }
+  .icon-facebook-grey {
+    height: 17px;
+    width: 9px;
+    background: url("/WebSite/image/icon_facebook_grey.png") no-repeat 0 0; }
+  .icon-twitter-grey {
+    height: 18px;
+    width: 23px;
+    background: url("/WebSite/image/icon_twitter_grey.png") no-repeat 0 0; }
 
 .row {
   margin: 0;
@@ -623,6 +653,86 @@ html {
   width: 33.33%;
   padding: 11px;
   min-height: 1px; }
+
+.table {
+  border-collapse: collapse;
+  width: 100%; }
+  .table .text-top {
+    vertical-align: top; }
+  .table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: solid 1px #e6e6e6; }
+  .table tr td:nth-child(1) {
+    background-color: #fafafa;
+    width: 166px; }
+  .table input[type=radio] {
+    margin-right: 10px; }
+  .table .radio-text {
+    margin-right: 30px; }
+  .table input[type=text] {
+    padding: 5px 10px;
+    width: 300px;
+    box-sizing: border-box; }
+  .table input[type=text].input-fluid {
+    width: 100%; }
+  .table textarea {
+    resize: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 100%; }
+
+.filebox {
+  display: inline-block; }
+  .filebox label {
+    cursor: pointer;
+    display: inline-block;
+    color: black;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    padding: 6px 30px;
+    background-color: #e6e6e6;
+    border: 1px solid #ccc;
+    border-radius: 5px; }
+  .filebox input[type="file"] {
+    /* 파일 필드 숨기기 */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0; }
+  .filebox-list {
+    margin-top: 15px; }
+
+.fileitem {
+  display: inline-block; }
+  .fileitem-name {
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    margin-right: 20px; }
+  .fileitem-size {
+    font-size: 12px;
+    color: #ccc;
+    font-weight: 300;
+    margin-right: 10px; }
+  .fileitem-delete {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ccc;
+    margin-right: 30px; }
+
+.ask .table strong {
+  font-weight: 300;
+  color: #9be7e7; }
+
+.ask .addfiletext {
+  margin-left: 10px; }
 
 .titlebar {
   background: url("/WebSite/image/sub02_title_image.png") no-repeat center center;

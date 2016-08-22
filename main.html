@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+  <title></title>
   <link rel="stylesheet" href="/WebSite/bower_components/Swiper/dist/css/swiper.min.css">
-	<link rel="stylesheet" href="/WebSite/css/main.css">
+  <link rel="stylesheet" href="/WebSite/css/main.css">
 </head>
 <body>
-	<div id="root">
-		<!-- header -->
-		<header id="header" class='header'>
+  <div id="root">
+    <header id="header" class='header'>
       <div class="container-fluid">
         <a class='header-logo' href="/WebSite/main.html">
           <img src="/WebSite/image/top_logo.png">
@@ -18,7 +17,7 @@
           <a class='nav-link' href="/WebSite/sub01.html">크바연구소</a>
           <a class='nav-link' href="/WebSite/sub04.html">크린파트너</a>
           <a class='nav-link' href="/WebSite/sub02.html">문의하기</a>
-          <a class='notyet' href="#" onClick="alert('서비스 준비중입니다. 빠른 시일내로 찾아뵙겠습니다.')"><button class='btn btn-border'>주문하기</button></a>
+          <a class='alert-notyetopen btn btn-border' href="#">주문하기</a>
         </nav>    
       </div>
     </header>
@@ -37,9 +36,6 @@
           <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-          
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
         </div>
       </div>
       
@@ -121,7 +117,7 @@
               고객님들의 세탁물을 손수 세탁하십니다. <br>
               30년의 노하우 X  크린바스켓, 기대하셔도 좋습니다!
             </p>
-            <a href="/WebSite/sub01.html"></a><button class="btn btn-border">장인들의 노하우 보러가기</button>
+            <a href="/WebSite/sub01.html"><button class="btn btn-border">장인들의 노하우 보러가기</button></a>
           </div>
           <div class="seemore-image seemore-image-first">
             
@@ -145,7 +141,7 @@
               하지만 고객님의 걱정을 덜어드릴<br>
               격이 다른 품질을 경험 해 보세요. 
             </p>
-            <a class='notyet' href="#" onClick="alert('서비스 준비중입니다. 빠른 시일내로 찾아뵙겠습니다.')"><button class="btn btn-border">세탁요금 알아보기</button></a>
+            <a class='alert-notyetopen' href="#"><button class="btn btn-border">세탁요금 알아보기</button></a>
           </div>
         </div>
         <!-- </div> -->
@@ -161,19 +157,16 @@
             <a class="badge-android" href='https://play.google.com/store/apps/details?id=com.bridge4biz.laundry&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'></a>
           </div>
         </div>
-        <!-- <a href="https://itunes.apple.com/kr/app/keulinbaseukes-nae-son-ui/id933165319?mt=8">크린바스켓 - 내 손안의 세탁소 - WashAppKorea</a> -->
       </div>
     </div>
-
-		<!-- footer -->
-		<footer id="footer" class='footer'>
-			<div class="container-fluid">
-				<p class='footer-info'>고객센터 1833-8543<span class="vertical-divider"></span>help@cleanbasket.co.kr</p>
-				<p class='footer-info'>(주)워시앱코리아<span class="vertical-divider"></span>대표이사 김우진<span class="vertical-divider"></span>사업자번호 220-88-86968<span class="vertical-divider"></span>주소 서울 강남구 봉은사로16길 16 타비쉬빌딩 1층</p>
-				<p class='footer-info'>Copyright © <strong>Wash App Korea.</strong> All rights reserved.</p>
-			</div>
-		</footer>
-	</div>
+    <footer id="footer" class='footer'>
+      <div class="container-fluid">
+        <p class='footer-info'>고객센터 1833-8543<span class="vertical-divider"></span>help@cleanbasket.co.kr</p>
+        <p class='footer-info'>(주)워시앱코리아<span class="vertical-divider"></span>대표이사 김우진<span class="vertical-divider"></span>사업자번호 220-88-86968<span class="vertical-divider"></span>주소 서울 강남구 봉은사로16길 16 타비쉬빌딩 1층</p>
+        <p class='footer-info'>Copyright © <strong>Wash App Korea.</strong> All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
   <script src="/WebSite/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/WebSite/bower_components/Swiper/dist/js/swiper.jquery.min.js"></script>
   <script src="/WebSite/js/main.js"></script>

@@ -6,7 +6,6 @@
 </head>
 <body>
   <div id="root">
-    <!-- header -->
     <header id="header" class='header'>
       <div class="container-fluid">
         <a class='header-logo' href="/WebSite/main.html">
@@ -17,8 +16,7 @@
           <a class='nav-link' href="/WebSite/sub01.html">크바연구소</a>
           <a class='nav-link' href="/WebSite/sub04.html">크린파트너</a>
           <a class='nav-link' href="/WebSite/sub02.html">문의하기</a>
-
-          <a class='notyet' href="#" onClick="alert('서비스 준비중입니다. 빠른 시일내로 찾아뵙겠습니다.')"><button class='btn btn-border'>주문하기</button></a>
+          <a class='alert-notyetopen btn btn-border' href="#">주문하기</a>
         </nav>    
       </div>
     </header>
@@ -26,8 +24,8 @@
       <h1>크바연구소</h1>
       <p>오로지 세탁만을 연구하는 크린바스켓과 세탁 장인들이 알려주는 세탁 노하우!</p>
       <div class="tabs">
-        <button class="btn btn-filled">세탁학개론</button>  
-        <button class="btn btn-transparent">생활 지수</button>
+        <a href="/WebSite" class="btn btn-filled">세탁학개론</a>  
+        <a href="/WebSite" class="btn btn-transparent">생활 지수</a>
       </div>
     </div>
     <div class="content">
@@ -48,16 +46,28 @@
             <ul class="post-list row">
               <li class="post-item col-1-of-3">
                 <div class="card">
-                  <div class="card-image"><img src="https://placehold.it/410x200" alt=""></div>
+                  <a href="/WebSite/sub01/01.html">
+                    <div class="card-image">
+                      <img src="https://placehold.it/410x200" alt="">
+                    </div>
+                  </a>
                   <div class="card-meta"><span class="card-date">2016.04.14</span></div>
-                  <h3 class="card-title">여름철 빨래 방법</h3>
+                  <h3 class="card-title">
+                    <a href="/WebSite/sub01/01.html">
+                    여름철 빨래 방법
+                    </a>
+                  </h3>
                 </div>
               </li>
               <li class="post-item col-1-of-3">
                 <div class="card">
-                  <div class="card-image" style="background-image: url('https://placehold.it/1000x800');"></div>
+                  <a href="/WebSite/sub01/01.html">
+                    <div class="card-image" style="background-image: url('https://placehold.it/1000x800');"></div>
+                  </a>
                   <div class="card-meta"><span class="card-date">2016.04.14</span></div>
-                  <h3 class="card-title">여름철 빨래 방법</h3>
+                  <h3 class="card-title">
+                    <a href="/WebSite/sub01/01.html">여름철 빨래 방법</a>
+                  </h3>
                 </div>
               </li>
               <li class="post-item col-1-of-3">
@@ -117,7 +127,6 @@
         </div>
       </div>
     </div>
-    <!-- footer -->
     <footer id="footer" class='footer'>
       <div class="container-fluid">
         <p class='footer-info'>고객센터 1833-8543<span class="vertical-divider"></span>help@cleanbasket.co.kr</p>
@@ -126,5 +135,7 @@
       </div>
     </footer>
   </div>
+  <script src="/WebSite/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/WebSite/js/sub01.js"></script>
 </body>
 </html>
