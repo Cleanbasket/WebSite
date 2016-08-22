@@ -1,7 +1,13 @@
 .ask {
+  letter-spacing: -0.075em;
   &-btns {
+    text-align: center;
+    .btn {
+      padding: 20px 72px;
+      margin: 4px;
+    }
     .btn-default {
-
+      
     }
   }
   .table {

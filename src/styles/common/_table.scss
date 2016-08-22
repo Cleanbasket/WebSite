@@ -7,16 +7,27 @@
   }
   
   th, td {
-    padding: 15px;
+    padding: 17px;
+
+    font-weight: $font-regular;
     text-align: left;
-    border-bottom: solid 1px #e6e6e6;  
+    
+    font-size: 16px; 
   }
   tr {
+    border-bottom: solid 1px #e6e6e6;  
+    &:last-child {
+      border-bottom: solid 1px black; 
+    }
     td:nth-child(1) {
+      padding: 21px;
       background-color: #fafafa;
       width: 166px;
+      font-size: 18px;
     }  
   }
+
+  // tr:last
   input[type=radio] {
     margin-right: 10px;
   }
