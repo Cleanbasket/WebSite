@@ -53,10 +53,18 @@
   height: 631px;
 
   vertical-align: middle;
+  position: relative;
+
   &-header {
     height: 127px;
     line-height: 127px;
     background-color: $brand-color;
+    .container:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
   }
 
   &-left {
@@ -66,6 +74,7 @@
 
   &-right {
     float: right;
+    vertical-align: middle;
   }
   &-title {
     display: inline-block;
@@ -75,7 +84,9 @@
     letter-spacing: -0.08em;
     vertical-align: middle;
   }
-
+  .vertical-divider {
+    vertical-align: middle; 
+  }
   &-text {
     margin: 0;
     display: inline-block;
@@ -129,6 +140,135 @@
     .icon {
       vertical-align: middle;
       margin-right: 5px;
+    }
+  }
+  &-content {
+    position: relative;
+  }
+  &-map {
+    overflow: hidden;
+    position: relative;
+    height: 631px - 127px;
+    width: 100%;
+
+    .scroll-disable, 
+    iframe {
+      position: absolute;
+      width: 100%;
+      height: 631px - 127px + 50px;
+      top: -50px;
+    }
+    
+    .scroll-disable {
+
+    }
+  }
+
+  &-place {
+    display: block;
+    left:0; right: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    width: 500px;
+    height: 500px;
+
+    &.closed {
+      display: none;
+    }
+    
+    .closebox {
+      position: absolute;
+      right: 68px;
+      top: 68px;
+      width: 50px;
+      height: 50px;
+      // background-color: red;
+    }
+
+    .clickbox {
+      position: absolute;
+      bottom: 108px;
+      right: 90px;
+
+      width: 200px;
+      height: 48px;
+      // background-color: red;
+    }
+
+    &.enable {
+      background: url('#{$rootPath}/image/ic_service_enable.png') 0 0 no-repeat;
+      background-size: 100% 100%;
+
+    }
+
+    &.unable {
+      background: url('#{$rootPath}/image/ic_service_unable.png') 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  &-allplace {
+    &.closed {
+      display: none;
+    }
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0, 0.8);
+    width: 100%;
+    height: 100%;
+    &-header {
+      vertical-align: middle;
+      position: relative;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+      }
+      padding-top: 30px;
+      text-align: center;
+
+      h2 {
+        vertical-align: middle;
+
+        display: inline-block;
+        color: $brand-color;
+        font-weight: $font-bold;
+      }
+    }
+
+    &-close {
+      vertical-align: middle;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      span {
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+      .close {
+        vertical-align: middle;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+    }
+
+    &-content {
+      position: relative;
+      // text-align: center;
+      height: 100%;
+      .line {
+        display: inline-block;
+        height: 100%;
+        width: 2px;
+        background-color: #ccc;
+      }
     }
   }
 }
