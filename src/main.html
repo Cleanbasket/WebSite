@@ -37,12 +37,47 @@
             <div class="area-right">
               <div class="area-location">
                 <span class="icon icon-gps"></span>
-                <input class="area-input" type="text">
+                <input class="area-input" type="text" placeholder="서울시 강남구 논현동">
               </div>
               <button class="btn area-submit">확인</button><!-- inline-block fix --><button class="btn btn-filled area-seeall"><span class="icon icon-map"></span><span>서비스지역 전체보기</span></button>
             </div>              
           </div>
         </header>
+        <div class="area-content">
+          <div class='area-map'>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1tC3mzUUTqSYGnBlbVZNUW10Ap70&hl=ko&z=13"></iframe>
+            <div class='scroll-disable' 
+              onClick="style.pointerEvents='none'" 
+              onmouseleave="style.pointerEvents='auto'"></div>
+          </div>
+          <div class="area-place enable closed">
+            <div class="closebox"></div>
+            <div class="clickbox"></div>
+          </div>
+          <div class="area-place unable closed">
+            <div class="closebox"></div>
+            <div class="clickbox"></div>
+          </div>
+        </div>
+        
+        <div class="area-allplace closed">
+          <header class="area-allplace-header">
+            <div class="container">
+              <h2>서비스지역 전체보기</h2>
+              <div class="area-allplace-close">
+                <span>지도로 되돌아가기</span>
+                <button class="close"></button>
+              </div>              
+            </div>
+          </header>
+          <div class="area-allplace-content">
+            <div class="container">
+              <img src="{{rootPath}}/image/ic_seoul.png" alt="">
+              <div class='line'></div>
+              <img src="{{rootPath}}/image/ic_seongnam.png" alt="">                
+            </div>
+          </div>
+        </div>
       </div>
       <div class="process">
         <div class="container">
