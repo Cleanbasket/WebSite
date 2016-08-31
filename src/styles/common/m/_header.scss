@@ -6,6 +6,11 @@ $zindex-header-nav: 509;
   z-index: $zindex-header;
   width: 100%;
   position: fixed;
+
+  a {
+    text-decoration: none;
+  }
+
   &-bar {
     position: relative;
     width: 100%;
