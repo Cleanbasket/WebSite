@@ -1,0 +1,158 @@
+html, 
+body,
+#root,
+.content {
+  padding-top: 0;
+  height: 100%;
+}
+
+.hero {
+  background-color: tomato;
+  height: 100%;
+  // padding-top: 45px;
+
+  &-typo {
+    margin-left: 10.5px;
+    padding-top: 115px;
+  }
+
+  &-bar {
+    // display: inline-block;
+    line-height: 0;
+    background-color: $brand-color;
+    width: 56px;
+    height: 4px;
+  }
+
+  &-text {
+    margin-top: 4px;
+    margin-bottom: 28px;
+    font-size: 35px;
+    font-weight: $font-thin;
+    line-height: 1.1em;
+    letter-spacing: -0.08em;
+  }
+
+  &-btn {
+
+  }
+}
+
+.process {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  mark {
+    background-color: transparent;
+    color: $brand-color;
+  }
+
+  &-title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: $font-regular;
+    line-height: 1.07em;
+    letter-spacing: -0.08em;
+
+    padding: 20px 0;
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &-item {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    padding: 17px 0;
+
+    h3 {
+      margin: 0;
+      font-size: 15px;
+      font-weight: $font-bold;
+    }
+
+    p {
+      margin: 0;
+      font-size: 13px;
+      font-weight: $font-regular;
+      line-height: 1.38em;
+      letter-spacing: -0.08em;
+    }
+
+    .left,
+    .right {
+      float: left;
+      display: inline-block;
+    }
+
+    .left {
+      text-align: center;
+      img {
+        width: 50%;
+      }
+
+      width: 28%;
+    }
+    .right {
+      width: 72%;
+    }
+  }
+}
+
+.price {
+  position: relative;
+  height: 417px;
+  background-color: tomato;
+  font-weight: $font-regular;
+  &-typo {
+    padding-top: 57px;
+  }
+
+  &-text {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.05em;
+  }
+
+  &-subtext {
+
+    margin-top: 18px;
+    margin-bottom: 20px;
+    font-size: 11px;
+  }
+
+  &-btn {
+    font-weight: $font-bold;
+    border-color: black;
+  }
+}
+
+.appdown {
+  background-color: #6D9CAB;
+  position: relative;
+  height: 201px;
+  text-align: center;
+
+  &-text {
+    margin: 0;
+
+    padding-top: 48px;
+    padding-bottom: 20px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.2em;
+    font-weight: $font-thin;
+    letter-spacing: -0.08em;
+  }
+
+  &-btn {
+    font-size: 9px!important;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+  }
+}
