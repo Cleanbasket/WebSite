@@ -67,4 +67,32 @@
     width: 23px;
     background: url("#{$rootPath}/image/icon_twitter_grey.png") no-repeat 0 0; 
   }
+
+  &-popupclose {
+    height: 17px;
+    width: 17px;
+    background: url("http://placehold.it/34x34") no-repeat 0 0;
+    background-size: 100% 100%;
+  }
+
+  &-q-mobile {
+    height: 26px;
+    width: 26px;
+    background: url("http://placehold.it/52x52") no-repeat 0 0;
+    background-size: 100% 100%;
+  }
+
+  &-arrow-up-mobile {
+    height: 10px;
+    width: 20px;
+    background: url("http://placehold.it/40x20") no-repeat 0 0; 
+    background-size: 100% 100%;
+  }
+
+  &-arrow-down-mobile {
+    height: 10px;
+    width: 20px;
+    background: url("http://placehold.it/52x52") no-repeat 0 0;
+    background-size: 100% 100%;
+  }
 }

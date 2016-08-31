@@ -49,7 +49,7 @@ function renderFilelist (renderTarget, fileboxLists, fileTargetId) {
     renderFilelist(renderTarget, fileboxLists, id);
   })
 }
-
+/* filebox List */
 function fileboxList(id, maxSize) {
   var fileList = this.fileList = [];
   this.fileboxId = id;
@@ -97,6 +97,7 @@ fileboxList.prototype.deleteIdx = function(idx) {
   this.fileList.splice(idx, 1);
 }
 
+/* util */
 function toKb(byte, roundSize) {
   var kb = byte / 1024
   var round = Math.pow(10, roundSize);

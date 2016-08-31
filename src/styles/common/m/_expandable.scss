@@ -1,0 +1,11 @@
+.expandable {
+  &-trigger {
+
+  }
+
+  &-content {
+    &.closed {
+      display: none;
+    }
+  }
+}

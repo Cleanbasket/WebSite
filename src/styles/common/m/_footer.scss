@@ -1,0 +1,43 @@
+.footer {
+  background-color: #323c3e;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &-nav {
+    
+  }
+
+  &-link {
+    display: block;
+    margin: 0;
+    padding: 4px 0;
+
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-weight: $font-thin;
+  }
+
+  hr {
+    display: block;
+    height: 0.5px;
+    border: 0;
+    
+    color: #475052;
+    background-color: #475052;
+
+    margin-top: 4px;
+    margin-bottom: 6px;
+  }
+
+  &-copy {
+    font-size: 8px;
+    font-weight: $font-thin;
+    color: white;
+  }
+
+  mark {
+    background-color: transparent;
+    color: $brand-color;
+  }
+}

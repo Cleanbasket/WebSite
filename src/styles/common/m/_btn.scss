@@ -1,0 +1,37 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  
+  // color: $brand-color;
+  padding: 11px 27px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  line-height: 100%;
+  font-size: 11px;
+  text-decoration: none;
+
+  &-default {
+    color: black;
+  }
+
+  &-filled {
+    color: white;
+    border: none;
+    background-color: $brand-color;
+  }
+
+  &-border {
+    color: $brand-color;
+    background-color: transparent;
+    border-color: $brand-color;
+  }
+
+  &-transparent {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    // opacity: 0.8;
+  }
+}
