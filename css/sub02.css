@@ -515,7 +515,7 @@ html {
     margin: 0;
     padding-top: 98px;
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -0.065em; }
   .titlebar p {
     font-size: 20px;
@@ -633,6 +633,26 @@ html {
     height: 18px;
     width: 23px;
     background: url("/WebSite/image/icon_twitter_grey.png") no-repeat 0 0; }
+  .icon-popupclose {
+    height: 17px;
+    width: 17px;
+    background: url("http://placehold.it/34x34") no-repeat 0 0;
+    background-size: 100% 100%; }
+  .icon-q-mobile {
+    height: 26px;
+    width: 26px;
+    background: url("http://placehold.it/52x52") no-repeat 0 0;
+    background-size: 100% 100%; }
+  .icon-arrow-up-mobile {
+    height: 10px;
+    width: 20px;
+    background: url("http://placehold.it/40x20") no-repeat 0 0;
+    background-size: 100% 100%; }
+  .icon-arrow-down-mobile {
+    height: 10px;
+    width: 20px;
+    background: url("http://placehold.it/52x52") no-repeat 0 0;
+    background-size: 100% 100%; }
 
 .row {
   margin: 0;

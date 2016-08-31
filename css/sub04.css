@@ -522,7 +522,7 @@ html {
     margin: 0;
     padding-top: 98px;
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -0.065em; }
   .titlebar p {
     font-size: 20px;
@@ -674,7 +674,7 @@ mark {
       padding-top: 30px;
       margin: 7px 0;
       font-size: 28px;
-      font-weight: 500;
+      font-weight: 600;
       letter-spacing: -0.1em; }
     .environment-item p {
       margin: 14px 0;
@@ -706,7 +706,7 @@ mark {
       margin-bottom: 30px;
       color: white;
       font-size: 20px;
-      font-weight: 500; }
+      font-weight: 600; }
   .qualifi-item {
     vertical-align: middle;
     line-height: 0;
@@ -722,7 +722,7 @@ mark {
       .qualifi-item .num > span {
         vertical-align: middle;
         font-size: 24px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 63px;
         color: white; }
     .qualifi-item .text {
