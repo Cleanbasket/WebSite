@@ -23,4 +23,13 @@ function init() {
     console.log(appDownAddress);
     window.location.href = appDownAddress;
   })
+
+  popup_init();
+}
+
+function popup_init() {
+  var $popup = $(".popup")
+  $popup.find(".popup-close").click(function (e) {
+    $popup.addClass('close');
+  });
 }

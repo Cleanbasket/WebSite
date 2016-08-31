@@ -7,6 +7,7 @@ body,
 }
 
 .hero {
+  position: relative;
   background-color: tomato;
   height: 100%;
   // padding-top: 45px;
@@ -36,6 +37,79 @@ body,
   &-btn {
 
   }
+}
+.popup {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 69px;
+  background-color: rgba(45, 54, 56, 0.9);
+  vertical-align: middle;
+
+  &.close {
+    display: none; 
+  }
+
+  > * {
+    vertical-align: middle;
+  }
+
+  &:before {
+    content: " ";
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+  }
+
+  &-close {
+    &:focus {
+      outline:0;
+    }
+    border: none;
+    margin: 0 6px;
+    padding: 0;
+    line-height: 0;
+  }
+
+  &-img {
+    width: 45px;
+  }
+
+  &-text {
+    margin-left: 6px;
+    color: white;
+    display: inline-block;
+    width: 170px;
+    font-size: 9px;
+    font-weight: $font-regular;
+    letter-spacing: -0.08em;
+
+    -webkit-text-size-adjust: none;
+  }
+
+  &-appdown {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55px;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+
+    border-left: 1px solid grey;
+    &:before {
+      content: " ";
+      vertical-align: middle;
+      display: inline-block;
+      height: 100%;
+    }
+    img {
+      width: 21px;
+      vertical-align: middle;
+    }
+  }
+
 }
 
 .process {
