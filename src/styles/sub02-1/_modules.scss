@@ -17,7 +17,24 @@
       // text-decoration: underline;
     }
   }
-  .addfiletext {
-    margin-left: 10px;
+
+  .attached {
+    &-btn {
+      color: black;
+      font-size: inherit;
+      line-height: 27px;
+      vertical-align: middle;
+    
+      padding: 6px 30px;
+      background-color: #e6e6e6;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    &-text {
+      margin-left: 10px;
+    }
+    
   }
+  
 }
