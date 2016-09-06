@@ -52,12 +52,16 @@
                 <tr>
                   <td>첨부파일</td>
                   <td>
-                    <div class="filebox">
+                    <!-- <div class="filebox">
                       <label for="add-file">파일추가</label>
-                      <input type="file" id="add-file" class='upload-hidden' multiple>
+                      <input type="file" id="add-file" class='upload-hidden'>
+                    </div> -->
+                    <button class="attached-btn filebox-trigger" data-filebox-id='attached'>파일추가</button>
+                    <div class="filebox-inputs" data-filebox-id='attached'>
+                      
                     </div>
-                    <span class='addfiletext'>파일당 <strong>최대 10M까지</strong> 등록할 수 있습니다.</span>
-                    <div class='filebox-list' data-filebox-id='add-file'></div>
+                    <span class='attached-text'>파일당 <strong>최대 10M까지</strong> 등록할 수 있습니다.</span>
+                    <div class='attached-box filebox-box' data-filebox-id='attached'></div>
                   </td>
                 </tr>
               </table>

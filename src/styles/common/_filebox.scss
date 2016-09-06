@@ -1,9 +1,9 @@
 .filebox {
   display: inline-block;
-  label {
-    cursor: pointer;
+  &-trigger {
+  //   cursor: pointer;
 
-    display: inline-block;
+    // display: inline-block;
     
     color: black;
     font-size: inherit;
@@ -16,20 +16,33 @@
     border-radius: 5px;
   }
 
-  input[type="file"] {  /* 파일 필드 숨기기 */
+  // input[type="file"] {  /* 파일 필드 숨기기 */
+  //   position: absolute;
+  //   width: 1px;
+  //   height: 1px;
+  //   padding: 0;
+  //   margin: -1px;
+  //   overflow: hidden;
+  //   clip:rect(0,0,0,0);
+  //   border: 0;
+  // }
+  &-inputs {
+    visibility:hidden;
     position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip:rect(0,0,0,0);
-    border: 0;
+
+    input {
+      visibility:hidden;
+      position: absolute;
+    }
   }
 
   &-list {
     
   } 
+
+  &-box {
+
+  }
 }
 
 .fileitem {
