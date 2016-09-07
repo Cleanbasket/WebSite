@@ -24,6 +24,8 @@ $zindex-header-nav: 509;
   
   &-title {
     margin-top: 18px;
+    width: 109px;
+    
   }
 
   &-hamburger {
@@ -39,6 +41,10 @@ $zindex-header-nav: 509;
     margin-top: 18px;
     &:focus {
       outline:0 !important;
+    }
+
+    img {
+      width: 16px;
     }
   }
   

@@ -8,7 +8,10 @@ body,
 
 .hero {
   position: relative;
-  background-color: tomato;
+  // background-color: tomato;
+  background: url("#{$rootPath}/image/bg_mobile_main_hero.png");
+  background-size: cover;
+  background-position: center center;
   height: 100%;
   // padding-top: 45px;
 
@@ -69,6 +72,7 @@ body,
     margin: 0 6px;
     padding: 0;
     line-height: 0;
+    background-color: transparent;
   }
 
   &-img {
@@ -116,6 +120,7 @@ body,
   position: relative;
   padding-top: 20px;
   padding-bottom: 50px;
+  
 
   mark {
     background-color: transparent;
@@ -183,6 +188,9 @@ body,
   height: 417px;
   background-color: tomato;
   font-weight: $font-regular;
+  background: url("#{$rootPath}/image/bg_mobile_main_price.png");
+  background-size: cover;
+  background-position: center center;
   &-typo {
     padding-top: 57px;
   }
@@ -207,7 +215,10 @@ body,
 }
 
 .appdown {
-  background-color: #6D9CAB;
+  background: url("#{$rootPath}/image/bg_mobile_main_appdown.png");
+  background-size: cover;
+  background-position: center center;
+
   position: relative;
   height: 201px;
   text-align: center;
