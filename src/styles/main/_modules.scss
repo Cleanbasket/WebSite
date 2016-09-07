@@ -261,16 +261,56 @@
 
     &-content {
       position: relative;
-      // text-align: center;
+      text-align: center;
       height: 100%;
-      .line {
-        display: inline-block;
-        height: 100%;
-        width: 2px;
-        background-color: #ccc;
+      // .line {
+      //   display: inline-block;
+      //   height: 100%;
+      //   width: 2px;
+      //   background-color: #ccc;
+      // }
+      .left,
+      .right {
+        position: absolute;
+        width: 405px;
+      }
+      .left {
+        position: absolute;
+        top: 0;
+        left: 15%;
+      }
+
+      .right {
+        position: absolute;
+        top: 0;
+        right: 15%;
+
+        p {
+          padding-top: 0.5em;
+        }
       }
     }
   }
+
+  &-addresses {
+    letter-spacing: -0.08em;
+    span {
+      display: inline-block;
+      width: 150px;
+      background-color: white;
+      color: black;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 2.2em;
+      border-radius: 1.1em;
+    }
+    p {
+      font-size: 17px;
+      color: white;
+    }
+  }
+
+
 }
 
 .process {
