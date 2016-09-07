@@ -416,7 +416,8 @@ html {
     background-color: white;
     z-index: 510; }
   .header-title {
-    margin-top: 18px; }
+    margin-top: 18px;
+    width: 109px; }
   .header-hamburger {
     line-height: 0;
     padding: 0;
@@ -428,6 +429,8 @@ html {
     margin-top: 18px; }
     .header-hamburger:focus {
       outline: 0 !important; }
+    .header-hamburger img {
+      width: 16px; }
   .header-nav {
     margin: 0;
     padding: 0;
@@ -575,7 +578,7 @@ html {
   .icon-popupclose {
     height: 17px;
     width: 17px;
-    background: url("http://placehold.it/34x34") no-repeat 0 0;
+    background: url("/WebSite/image/icon_popup_close.png") no-repeat 0 0;
     background-size: 100% 100%; }
   .icon-q-mobile {
     height: 26px;
@@ -602,7 +605,9 @@ body,
 
 .hero {
   position: relative;
-  background-color: tomato;
+  background: url("/WebSite/image/bg_mobile_main_hero.png");
+  background-size: cover;
+  background-position: center center;
   height: 100%; }
   .hero-typo {
     margin-left: 10.5px;
@@ -640,7 +645,8 @@ body,
     border: none;
     margin: 0 6px;
     padding: 0;
-    line-height: 0; }
+    line-height: 0;
+    background-color: transparent; }
     .popup-close:focus {
       outline: 0; }
   .popup-img {
@@ -721,7 +727,10 @@ body,
   position: relative;
   height: 417px;
   background-color: tomato;
-  font-weight: 300; }
+  font-weight: 300;
+  background: url("/WebSite/image/bg_mobile_main_price.png");
+  background-size: cover;
+  background-position: center center; }
   .price-typo {
     padding-top: 57px; }
   .price-text {
@@ -737,7 +746,9 @@ body,
     border-color: black; }
 
 .appdown {
-  background-color: #6D9CAB;
+  background: url("/WebSite/image/bg_mobile_main_appdown.png");
+  background-size: cover;
+  background-position: center center;
   position: relative;
   height: 201px;
   text-align: center; }

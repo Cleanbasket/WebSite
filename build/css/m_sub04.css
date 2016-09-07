@@ -416,7 +416,8 @@ html {
     background-color: white;
     z-index: 510; }
   .header-title {
-    margin-top: 18px; }
+    margin-top: 18px;
+    width: 109px; }
   .header-hamburger {
     line-height: 0;
     padding: 0;
@@ -428,6 +429,8 @@ html {
     margin-top: 18px; }
     .header-hamburger:focus {
       outline: 0 !important; }
+    .header-hamburger img {
+      width: 16px; }
   .header-nav {
     margin: 0;
     padding: 0;
@@ -578,7 +581,7 @@ html {
   .icon-popupclose {
     height: 17px;
     width: 17px;
-    background: url("http://placehold.it/34x34") no-repeat 0 0;
+    background: url("/WebSite/image/icon_popup_close.png") no-repeat 0 0;
     background-size: 100% 100%; }
   .icon-q-mobile {
     height: 26px;

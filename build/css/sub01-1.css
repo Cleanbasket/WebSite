@@ -643,7 +643,7 @@ html {
   .icon-popupclose {
     height: 17px;
     width: 17px;
-    background: url("http://placehold.it/34x34") no-repeat 0 0;
+    background: url("/WebSite/image/icon_popup_close.png") no-repeat 0 0;
     background-size: 100% 100%; }
   .icon-q-mobile {
     height: 26px;

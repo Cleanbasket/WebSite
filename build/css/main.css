@@ -627,7 +627,7 @@ html {
   .icon-popupclose {
     height: 17px;
     width: 17px;
-    background: url("http://placehold.it/34x34") no-repeat 0 0;
+    background: url("/WebSite/image/icon_popup_close.png") no-repeat 0 0;
     background-size: 100% 100%; }
   .icon-q-mobile {
     height: 26px;
@@ -831,12 +831,36 @@ html {
         border-radius: 4px; }
     .area-allplace-content {
       position: relative;
+      text-align: center;
       height: 100%; }
-      .area-allplace-content .line {
-        display: inline-block;
-        height: 100%;
-        width: 2px;
-        background-color: #ccc; }
+      .area-allplace-content .left,
+      .area-allplace-content .right {
+        position: absolute;
+        width: 405px; }
+      .area-allplace-content .left {
+        position: absolute;
+        top: 0;
+        left: 15%; }
+      .area-allplace-content .right {
+        position: absolute;
+        top: 0;
+        right: 15%; }
+        .area-allplace-content .right p {
+          padding-top: 0.5em; }
+  .area-addresses {
+    letter-spacing: -0.08em; }
+    .area-addresses span {
+      display: inline-block;
+      width: 150px;
+      background-color: white;
+      color: black;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 2.2em;
+      border-radius: 1.1em; }
+    .area-addresses p {
+      font-size: 17px;
+      color: white; }
 
 .process {
   background: url("/WebSite/image/bg_scene3.png") no-repeat center center;
