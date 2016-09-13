@@ -583,17 +583,17 @@ html {
   .icon-q-mobile {
     height: 26px;
     width: 26px;
-    background: url("http://placehold.it/52x52") no-repeat 0 0;
+    background: url("/WebSite/image/icon_q_mobile.png") no-repeat 0 0;
     background-size: 100% 100%; }
   .icon-arrow-up-mobile {
     height: 10px;
     width: 20px;
-    background: url("http://placehold.it/40x20") no-repeat 0 0;
+    background: url("/WebSite/image/icon_arrow_up_mobile.png") no-repeat 0 0;
     background-size: 100% 100%; }
   .icon-arrow-down-mobile {
     height: 10px;
     width: 20px;
-    background: url("http://placehold.it/52x52") no-repeat 0 0;
+    background: url("/WebSite/image/icon_arrow_down_mobile.png") no-repeat 0 0;
     background-size: 100% 100%; }
 
 html,
@@ -682,7 +682,7 @@ body,
 .process {
   position: relative;
   padding-top: 20px;
-  padding-bottom: 50px; }
+  padding-bottom: 40px; }
   .process mark {
     background-color: transparent;
     color: #5ddbdb; }
@@ -700,7 +700,7 @@ body,
     margin: 0;
     padding: 0;
     list-style-type: none;
-    padding: 17px 0; }
+    padding: 15px 0; }
     .process-item h3 {
       margin: 0;
       font-size: 15px;
@@ -717,11 +717,12 @@ body,
       display: inline-block; }
     .process-item .left {
       text-align: center;
-      width: 28%; }
+      width: 29%; }
       .process-item .left img {
-        width: 50%; }
+        width: 80%;
+        padding-top: 5px; }
     .process-item .right {
-      width: 72%; }
+      width: 71%; }
 
 .price {
   position: relative;

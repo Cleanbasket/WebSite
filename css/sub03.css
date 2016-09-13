@@ -633,17 +633,17 @@ html {
   .icon-q-mobile {
     height: 26px;
     width: 26px;
-    background: url("http://placehold.it/52x52") no-repeat 0 0;
+    background: url("/WebSite/image/icon_q_mobile.png") no-repeat 0 0;
     background-size: 100% 100%; }
   .icon-arrow-up-mobile {
     height: 10px;
     width: 20px;
-    background: url("http://placehold.it/40x20") no-repeat 0 0;
+    background: url("/WebSite/image/icon_arrow_up_mobile.png") no-repeat 0 0;
     background-size: 100% 100%; }
   .icon-arrow-down-mobile {
     height: 10px;
     width: 20px;
-    background: url("http://placehold.it/52x52") no-repeat 0 0;
+    background: url("/WebSite/image/icon_arrow_down_mobile.png") no-repeat 0 0;
     background-size: 100% 100%; }
 
 .about {
