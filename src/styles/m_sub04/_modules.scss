@@ -12,7 +12,9 @@ h1, h2, h3, h4, h5, h6 {
 .titlebar {
   height: 150px;
   text-align: center;
-  background-color: tomato;
+  background: url("#{$rootPath}/image/bg_mobile_sub04.png") 0 0 no-repeat;
+  background-position: center center;
+  background-size: cover;
   h1 {
     margin: 0;
     padding: 0;

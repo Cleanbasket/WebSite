@@ -10,5 +10,13 @@ function m_expandable_init() {
     })
 
     $target.toggleClass('closed');
+    // hard coded
+    if($target.hasClass('closed')) {
+      $('.category-name').find('.icon')
+        .addClass('icon-arrow-down-mobile')
+        .removeClass('icon-arrow-up-mobile');
+    } else {
+      $('.category-name').find('.icon').addClass('icon-arrow-up-mobile').removeClass('icon-arrow-down-mobile')
+    }
   })
 }
